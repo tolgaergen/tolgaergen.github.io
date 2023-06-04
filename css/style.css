@@ -1,0 +1,131 @@
+h2 {
+  font-variant: small-caps;
+}
+
+p.bibitem {
+  margin: 20px;
+  text-indent: -20px;
+}
+
+a.keyword {
+	color: #6D7B8D;
+	font-size: 10pt;
+	background: #E5E4E2;
+	padding: 3px 4px;
+	margin: 0px 1px;
+	border-radius: 4px;
+}
+
+a.link {
+	color: #fff;
+	opacity: 0.7;
+	background:#1569C7;;
+	padding: 4px 6px;
+	font-size: 10pt;
+	line-height: 18pt;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+ 
+
+a.link:hover {
+	opacity: 1;
+}
+
+a.link_url {
+	background:#1569C7;
+}
+
+a.link_arxiv {
+	background: #C03;
+	padding: 4px 6px;
+	font-size: 10pt;
+	line-height: 18pt;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+a.link_email {
+	background: #C03;
+	padding: 12px 12px;
+	font-size: 10pt;
+	line-height: 18pt;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+a.link_cv {
+	background: #36F;
+	padding: 12px 12px;
+	font-size: 10pt;
+	line-height: 18pt;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+a.link_scholar {
+	background: #e6b800;
+	padding: 12px 12px;
+	font-size: 10pt;
+	line-height: 18pt;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+a.link_twitter {
+	background: #0d94e7;
+	padding: 12px 12px;
+	font-size: 10pt;
+	line-height: 18pt;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+a.link_git {
+	background: #100008;
+	padding: 12px 12px;
+	font-size: 10pt;
+	line-height: 18pt;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+a.link_doi {
+	background:#FFA62F;
+}
+
+a.link_bibtex {
+	background:#4B0082;
+}
+
+a.link_isbn, a.link_custom {
+	background:#1569C7;
+}
+
+a.link_pdf, a.link_file {
+	background:#36F;
+	padding: 4px 6px;
+	font-size: 10pt;
+	line-height: 18pt;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+
+
+a.link_code {
+	background: #0E53A7;
+}
+
+.line {
+  width: 250px;
+  height: 0;
+  border: 1px solid #C4C4C4;
+  margin: 3px;
+  display:inline-block;
+}
