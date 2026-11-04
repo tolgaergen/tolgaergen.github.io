@@ -270,3 +270,27 @@ footer a { color: var(--text-2); }
   section.block { padding: 44px 0; }
   .toolbar { position: static; }
 }
+
+/* ---------- Current work ---------- */
+section.now { background: linear-gradient(180deg, var(--bg-alt), var(--bg)); }
+.focus { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.focus-card {
+  position: relative; background: var(--surface); border: 1px solid var(--line); border-radius: 18px;
+  padding: 24px 24px 20px; box-shadow: var(--shadow); display: flex; flex-direction: column;
+  transition: transform .2s, border-color .2s;
+}
+.focus-card::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 3px; border-radius: 18px 18px 0 0; background: var(--accent); opacity: .85; }
+.focus-card:hover { transform: translateY(-3px); border-color: color-mix(in srgb, var(--accent) 40%, var(--line)); }
+.focus-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+.focus-top i { font-size: 20px; color: var(--accent); background: var(--accent-soft); width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center; }
+.focus-top .num { font-family: var(--serif); font-size: 28px; color: var(--line); font-weight: 600; }
+.focus-card h3 { font-family: var(--serif); font-size: 21px; font-weight: 600; margin: 0 0 8px; letter-spacing: -0.01em; }
+.focus-card p { color: var(--text-2); font-size: 15px; line-height: 1.6; margin: 0 0 18px; flex: 1; }
+.refs { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; border-top: 1px dashed var(--line); padding-top: 14px; }
+.refs span { font-size: 11.5px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--text-3); margin-right: 4px; }
+.refs a { font-size: 12.5px; padding: 3px 9px; border-radius: 999px; background: var(--bg-alt); border: 1px solid var(--line); color: var(--text-2); }
+.refs a:hover { color: var(--accent); border-color: var(--accent); text-decoration: none; }
+.refs a em { font-style: normal; color: var(--text-3); margin-left: 3px; }
+.tl .desc { color: var(--text-2); font-size: 13.5px; line-height: 1.5; margin-top: 3px; }
+.tl li { align-items: start; }
+@media (max-width: 860px) { .focus { grid-template-columns: 1fr; } }
