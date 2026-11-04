@@ -1,199 +1,234 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Academic Website">
-    <meta name="author" content="Tolga Ergen">
-    <meta name="keywords" content="Stanford, Optimization, Deep Learning, Neural Networks, Research">
-    <title>Tolga Ergen</title>
-    <link href="css/bootstrap.min2.css" rel="stylesheet">
-    <link href="css/non-responsive.css" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tolga Ergen</title>
+  <meta name="description" content="Tolga Ergen is a Research Scientist at LG AI Research working on optimization, deep learning, and large language models. Ph.D. in Electrical Engineering, Stanford University.">
+  <meta name="author" content="Tolga Ergen">
+  <meta name="keywords" content="Tolga Ergen, LG AI Research, Stanford, Optimization, Deep Learning, Large Language Models, Convex Optimization, Neural Networks">
+  <meta property="og:title" content="Tolga Ergen">
+  <meta property="og:description" content="Research Scientist at LG AI Research. Optimization, deep learning, and large language models.">
+  <meta property="og:image" content="https://tolgaergen.github.io/images/tolga2.jpg">
+  <meta property="og:type" content="website">
+  <meta name="color-scheme" content="light dark">
   <link rel="icon" type="image/png" href="images/seal_icon.png">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-7580334-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
 
-    gtag('config', 'UA-7580334-2');
-  </script>
-  
-  
-  </head>
+  <header class="nav">
+    <div class="wrap">
+      <a class="brand" href="index.html">Tolga Ergen</a>
+      <ul>
+        <li><a class="nl active" href="index.html">Home</a></li>
+        <li class="opt"><a class="nl" href="#news">News</a></li>
+        <li class="opt"><a class="nl" href="#experience">Experience</a></li>
+        <li><a class="nl" href="research.html">Publications</a></li>
+        <li><a class="nl" href="data/CV_Tolga_Ergen.pdf">CV</a></li>
+      </ul>
+    </div>
+  </header>
 
-  <body>
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">Tolga Ergen</a>
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="wrap">
+        <div class="portrait">
+          <img src="images/tolga2.jpg" alt="Portrait of Tolga Ergen" width="260" height="300">
         </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="research.html">Research</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
+        <div>
+          <p class="eyebrow">Research Scientist</p>
+          <h1>Tolga Ergen</h1>
+          <p class="role"><strong><a href="https://www.lgresearch.ai/">LG AI Research</a></strong> &nbsp;·&nbsp; Ph.D., Stanford University</p>
+          <p class="lead">I work at the intersection of optimization and deep learning, building efficient and scalable methods to make large language models more efficient, robust, and better understood.</p>
+          <div class="socials">
+            <a class="btn primary" href="mailto:tergen@lgresearch.ai"><i class="fa-solid fa-envelope"></i>Email</a>
+            <a class="btn" href="data/CV_Tolga_Ergen.pdf"><i class="fa-solid fa-file-lines"></i>CV</a>
+            <a class="btn" href="https://scholar.google.com.tr/citations?user=T1pWaCsAAAAJ&hl=en"><i class="fa-solid fa-graduation-cap"></i>Scholar</a>
+            <a class="btn" href="https://github.com/tolgaergen"><i class="fa-brands fa-github"></i>GitHub</a>
+            <a class="btn" href="https://twitter.com/tolgaergen_"><i class="fa-brands fa-x-twitter"></i>Twitter</a>
+          </div>
+        </div>
       </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section class="block" id="about">
+      <div class="wrap reveal">
+        <div class="section-head"><h2 class="title">About</h2></div>
+        <div class="prose">
+          <p>I am currently a Research Scientist at <a href="https://www.lgresearch.ai/">LG AI Research</a>. Before that, I worked with <a href="https://www.neyshabur.net">Behnam Neyshabur</a> and <a href="https://scholar.google.com/citations?user=murJPNoAAAAJ&hl=en">Harsh Mehta</a> at <a href="https://research.google/">Google Research</a>, and with <a href="https://yubai.org">Yu Bai</a> at <a href="https://einstein.ai/">Salesforce Research</a> as a research intern.</p>
+          <p>My primary research interests lie at the intersection of optimization and deep learning. I am dedicated to advancing efficient and scalable optimization techniques, with a current focus on enhancing the efficiency, robustness, and understanding of Large Language Models (LLMs). I am also exploring new data generation methods and the development of intelligent agents to further extend the capabilities of deep learning systems.</p>
+          <p>I received my Ph.D. in <a href="https://ee.stanford.edu/">Electrical Engineering</a> from <a href="https://www.stanford.edu/">Stanford University</a> under the supervision of Prof. <a href="https://stanford.edu/~pilanci/">Mert Pilanci</a>. Before Stanford, I obtained B.S. and M.S. degrees in <a href="http://www.ee.bilkent.edu.tr/">Electrical and Electronics Engineering</a> from <a href="https://w3.bilkent.edu.tr/bilkent/">Bilkent University</a> in 2016 and 2018, where I worked with Prof. <a href="http://kilyos.ee.bilkent.edu.tr/~kozat/">Suleyman Serdar Kozat</a>.</p>
+        </div>
+
+        <div class="interests">
+          <div class="interest">
+            <i class="fa-solid fa-robot"></i>
+            <h3>LLMs &amp; Agents</h3>
+            <p>Integrating large-scale language models with autonomous agents to build adaptive, intelligent systems.</p>
+          </div>
+          <div class="interest">
+            <i class="fa-solid fa-database"></i>
+            <h3>Data Generation</h3>
+            <p>High-quality synthetic data creation to improve model training, robustness, and performance.</p>
+          </div>
+          <div class="interest">
+            <i class="fa-solid fa-chart-line"></i>
+            <h3>Optimization</h3>
+            <p>Efficient training strategies with strong performance guarantees for deep networks and large-scale models.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Honors ===== -->
+    <section class="block" id="honors">
+      <div class="wrap reveal">
+        <div class="section-head"><h2 class="title">Honors &amp; Awards</h2></div>
+        <div class="honors">
+          <div class="honor">
+            <span class="yr">2022</span>
+            <h3><a href="https://research.adobe.com/fellowship/previous-fellowship-award-winners/">Adobe Research Fellowship</a></h3>
+            <p>Adobe Research</p>
+          </div>
+          <div class="honor">
+            <span class="yr">2021</span>
+            <h3>Outstanding Reviewer Award</h3>
+            <p>NeurIPS 2021 · top 8% of reviewers</p>
+          </div>
+          <div class="honor">
+            <span class="yr">2021</span>
+            <h3>Outstanding Paper Award</h3>
+            <p>ICASSP 2021</p>
+          </div>
+          <div class="honor">
+            <span class="yr">2020</span>
+            <h3>Best Poster Award</h3>
+            <p>DeepMath 2020 · invited talk at DeepMath 2021</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== News ===== -->
+    <section class="block" id="news">
+      <div class="wrap reveal">
+        <div class="section-head"><h2 class="title">News</h2></div>
+        <ul class="news">
+          <li><span class="date">Feb 2025</span><span class="txt">Our paper on <a href="https://arxiv.org/abs/2312.12657">convex optimization theory and sparse recovery models</a> has been accepted to <strong>IEEE Transactions on Information Theory</strong>.</span></li>
+          <li><span class="date">Jan 2025</span><span class="txt">Paper accepted at <a href="https://2025.naacl.org/"><strong>NAACL 2025</strong></a>! We introduce <a href="https://arxiv.org/abs/2406.06357">MASSW</a>, a large-scale text dataset on Multi-Aspect Summarization of Scientific Workflows for AI-assisted scientific innovation.</span></li>
+          <li><span class="date">Dec 2024</span><span class="txt">New preprint: <a href="https://arxiv.org/abs/2412.18673">Map2Text</a>, new content generation from low-dimensional visualizations.</span></li>
+          <li><span class="date">Oct 2024</span><span class="txt">New preprint: <a href="https://arxiv.org/abs/2410.14826">SPRIG</a>, improving large language model performance by system prompt optimization.</span></li>
+          <li><span class="date">Jan 2024</span><span class="txt">Paper accepted at <a href="https://iclr.cc/"><strong>ICLR 2024</strong></a>: we extend <a href="https://openreview.net/forum?id=ikmuHqugN7">Burer–Monteiro</a> from linear matrix factorization to neural networks with convolution, fully-connected, and self-attention layers.</span></li>
+          <li><span class="date">Sep 2023</span><span class="txt">Two papers accepted at <a href="https://neurips.cc/"><strong>NeurIPS 2023</strong></a>: we analyze <a href="https://openreview.net/forum?id=Z1Aj59LoZD">pathwise regularized deep neural network training</a> through convex optimization and relate similar analyses to the <a href="https://openreview.net/forum?id=YWsPN0EMZr">NTK</a> of deep neural networks.</span></li>
+          <li class="hl"><span class="date">Jul 2023</span><span class="txt">I joined <a href="https://www.lgresearch.ai/">LG AI Research</a> as a <strong>Research Scientist</strong>.</span></li>
+          <li class="hl"><span class="date">Jun 2023</span><span class="txt">I successfully defended my Ph.D. dissertation and graduated from <strong>Stanford University</strong>.</span></li>
+        </ul>
+        <details class="more">
+          <summary><span class="lbl-open">Show older news</span><span class="lbl-close">Show less</span> <i class="fa-solid fa-chevron-down"></i></summary>
+          <ul class="news">
+            <li><span class="date">Jan 2023</span><span class="txt">Two papers accepted at <a href="https://iclr.cc/"><strong>ICLR 2023</strong></a>: globally optimal training of <a href="https://openreview.net/forum?id=_9k5kTgyHT">threshold/binary networks</a> and the <a href="https://openreview.net/forum?id=6zrOr_Rdhjs">duality gap</a> of deep neural networks.</span></li>
+            <li><span class="date">Nov 2022</span><span class="txt">New preprint: a convex optimization perspective for <a href="https://arxiv.org/abs/2211.11052">transformer networks</a>.</span></li>
+            <li><span class="date">Jun 2022</span><span class="txt">I joined <a href="https://research.google/">Google Research</a> as a research intern.</span></li>
+            <li><span class="date">May 2022</span><span class="txt">Paper accepted at <a href="https://icml.cc/"><strong>ICML 2022</strong></a>: we analyze <a href="https://proceedings.mlr.press/v162/sahiner22a.html">attention</a> in vision transformers via convex optimization.</span></li>
+            <li class="hl"><span class="date">Feb 2022</span><span class="txt">Awarded the <a href="https://research.adobe.com/fellowship/previous-fellowship-award-winners/"><strong>2022 Adobe Research Fellowship</strong></a>.</span></li>
+            <li><span class="date">Jan 2022</span><span class="txt">Two papers accepted at <a href="https://iclr.cc/"><strong>ICLR 2022</strong></a>: we analyze <a href="https://openreview.net/pdf?id=6XGgutacQ0B">BatchNorm</a> and <a href="https://openreview.net/pdf?id=e2Lle5cij9D">GANs</a> via convex optimization.</span></li>
+            <li class="hl"><span class="date">Nov 2021</span><span class="txt">Invited talk at <a href="https://deepmath-conference.com/"><strong>DeepMath 2021</strong></a> as the <strong>best poster award winner</strong>.</span></li>
+            <li class="hl"><span class="date">Oct 2021</span><span class="txt">Selected for a <a href="https://neurips.cc/"><strong>NeurIPS 2021 Outstanding Reviewer Award</strong></a>, given to the top 8% of reviewers.</span></li>
+            <li><span class="date">Sep 2021</span><span class="txt">New preprint: we analyze <a href="https://arxiv.org/abs/2110.09548">path regularized ReLU networks</a> via convex duality.</span></li>
+            <li><span class="date">Sep 2021</span><span class="txt">New preprint: we exactly characterize the <a href="https://arxiv.org/abs/2110.06482">duality gap for parallel deep networks</a>.</span></li>
+            <li><span class="date">Aug 2021</span><span class="txt">Our paper on <a href="https://jmlr.org/papers/v22/20-1447.html">convex analysis of ReLU networks</a> has been accepted to <strong>JMLR</strong>.</span></li>
+            <li><span class="date">Jul 2021</span><span class="txt">New preprint: we analyze the training of <a href="https://arxiv.org/abs/2107.05680">Wasserstein GANs</a> through the lens of convex duality.</span></li>
+            <li class="hl"><span class="date">Jun 2021</span><span class="txt">Received the <strong>Outstanding Paper Award</strong> at <a href="https://www.2021.ieeeicassp.org/2021.ieeeicassp.org/default.html"><strong>ICASSP 2021</strong></a>.</span></li>
+            <li><span class="date">Jun 2021</span><span class="txt">I joined <a href="https://einstein.ai/">Salesforce Research</a> as a research intern.</span></li>
+            <li><span class="date">May 2021</span><span class="txt">Two papers accepted at <a href="https://icml.cc/"><strong>ICML 2021</strong></a> on <a href="http://proceedings.mlr.press/v139/ergen21a">globally optimal training</a> and <a href="http://proceedings.mlr.press/v139/ergen21b">convex analysis</a> of deep neural networks.</span></li>
+            <li><span class="date">Jan 2021</span><span class="txt">Two papers accepted at <a href="https://iclr.cc/"><strong>ICLR 2021</strong></a>: exact convex programs for <a href="https://openreview.net/pdf?id=0N8jUH4JMv6">convolutional</a> and <a href="https://openreview.net/pdf?id=fGF8qAqpXXG">vector-output</a> ReLU networks.</span></li>
+            <li class="hl"><span class="date">Dec 2020</span><span class="txt">Received the <strong>best poster award</strong> at <a href="https://deepmath-conference.com/"><strong>DeepMath 2020</strong></a>.</span></li>
+          </ul>
+        </details>
+      </div>
+    </section>
+
+    <!-- ===== Experience & Education ===== -->
+    <section class="block" id="experience">
+      <div class="wrap reveal">
+        <div class="section-head"><h2 class="title">Experience &amp; Education</h2></div>
+        <div class="two-col">
+          <div>
+            <h3 class="col-title">Work</h3>
+            <ul class="tl">
+              <li>
+                <span class="logo"><img src="images/LG_logo.png" alt="LG"></span>
+                <div><div class="what">Research Scientist</div><div class="where"><a href="https://www.lgresearch.ai/">LG AI Research</a></div><div class="when">Jul 2023 – Present</div></div>
+              </li>
+              <li>
+                <span class="logo"><img src="images/google_logo.png" alt="Google"></span>
+                <div><div class="what">Research Intern</div><div class="where"><a href="https://research.google/">Google Research</a></div><div class="when">Jun 2022 – Sep 2022</div></div>
+              </li>
+              <li>
+                <span class="logo"><img src="images/salesforce_logo.png" alt="Salesforce"></span>
+                <div><div class="what">Research Intern</div><div class="where"><a href="https://einstein.ai/">Salesforce Research</a></div><div class="when">Jun 2021 – Sep 2021</div></div>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="col-title">Education</h3>
+            <ul class="tl">
+              <li>
+                <span class="logo"><img src="images/stanford.png" alt="Stanford"></span>
+                <div><div class="what">Ph.D., <a href="https://ee.stanford.edu/">Electrical Engineering</a></div><div class="where"><a href="https://www.stanford.edu">Stanford University</a></div><div class="when">2018 – 2023</div></div>
+              </li>
+              <li>
+                <span class="logo"><img src="images/bilkent.png" alt="Bilkent"></span>
+                <div><div class="what">M.S., <a href="https://ee.bilkent.edu.tr/en/">Electrical &amp; Electronics Engineering</a></div><div class="where"><a href="https://w3.bilkent.edu.tr/bilkent/">Bilkent University</a></div><div class="when">2018</div></div>
+              </li>
+              <li>
+                <span class="logo"><img src="images/bilkent.png" alt="Bilkent"></span>
+                <div><div class="what">B.S., <a href="https://ee.bilkent.edu.tr/en/">Electrical &amp; Electronics Engineering</a></div><div class="where"><a href="https://w3.bilkent.edu.tr/bilkent/">Bilkent University</a></div><div class="when">2016</div></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Teaching & Service ===== -->
+    <section class="block" id="teaching">
+      <div class="wrap reveal">
+        <div class="section-head"><h2 class="title">Teaching</h2><span class="sub">Teaching Assistant</span></div>
+        <div class="two-col">
+          <ul class="courses">
+            <li><span class="code"><a href="http://web.stanford.edu/class/ee269/">EE269</a></span><span class="term">Fall 2019, 2020, 2021</span><span class="name">Signal Processing for Machine Learning</span><span class="inst">Stanford</span></li>
+            <li><span class="code"><a href="http://web.stanford.edu/class/ee270/">EE270</a></span><span class="term">Winter 2020, 2021</span><span class="name">Large Scale Matrix Computation, Optimization and Learning</span><span class="inst">Stanford</span></li>
+            <li><span class="code"><a href="http://web.stanford.edu/class/ee364b/">EE364B</a></span><span class="term">Spring 2020, 2021</span><span class="name">Convex Optimization II</span><span class="inst">Stanford</span></li>
+          </ul>
+          <ul class="courses">
+            <li><span class="code"><a href="https://stars.bilkent.edu.tr/syllabus/view/EEE/424/EE_BS/">EEE424</a></span><span class="term">Fall 2016, 2017, Spring 2018</span><span class="name">Digital Signal Processing</span><span class="inst">Bilkent</span></li>
+            <li><span class="code"><a href="https://stars.bilkent.edu.tr/syllabus/view/EEE/102/20151?section=1">EEE102</a></span><span class="term">Spring 2018</span><span class="name">Introduction to Digital Circuit Design</span><span class="inst">Bilkent</span></li>
+          </ul>
+        </div>
+
+        <div class="section-head" style="margin-top:48px"><h2 class="title">Academic Service</h2><span class="sub">Reviewer</span></div>
+        <div class="service">
+          <span class="tag">NeurIPS</span><span class="tag">ICML</span><span class="tag">ICLR</span><span class="tag">IEEE TNNLS</span><span class="tag">IEEE SPL</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 Tolga Ergen</span>
+      <span><a href="mailto:tergen@lgresearch.ai">tergen@lgresearch.ai</a></span>
     </div>
+  </footer>
 
-    <div class="container">
-    	  <div class="page-header">
-      		<h2>Tolga Ergen </h2>
-      	</div>
-      	
-      	<div class="col-md-5 col-sm-5 col-xs-5">
-      		<img src="images/tolga2.jpg" class="col-md-12 col-sm-10 col-xs-10" title="Tolga Ergen"/>
-      	</div>
-      
-      	<div class="col-md-7 col-sm-5 col-xs-6">
- I am currently a Research Scientist at <a href="https://www.lgresearch.ai/">LG AI Research</a>. Prior to that, I also had the opportunity to work with <a href="https://www.neyshabur.net">Behnam Neyshabur</a> and <a href="https://scholar.google.com/citations?user=murJPNoAAAAJ&hl=en">Harsh Mehta</a> at <a href="https://research.google/">Google Research</a>, and <a href="https://yubai.org">Yu Bai</a>  at <a href="https://einstein.ai/">Salesforce Research</a> as a research intern.
-            <br>
-          <br/>
-               My primary research interests lie at the intersection of optimization and deep learning. I am dedicated to advancing efficient and scalable optimization techniques, with a current focus on enhancing the efficiency, robustness, and understanding of Large Language Models (LLMs). Additionally, I am exploring innovative data generation methods and the development of intelligent agents to further extend the capabilities of deep learning systems.
-          <br>
-    			<br/>
-          I received my Ph.D. in <a href="https://ee.stanford.edu/">Electrical Engineering</a> from <a href="https://www.stanford.edu/">Stanford University</a> under the supervision of Prof. <a href="https://stanford.edu/~pilanci/">Mert Pilanci</a>. Prior to joining Stanford, I obtained B.S. and M.S. degrees in <a href="http://www.ee.bilkent.edu.tr/">Electrical and Electronics Engineering</a>
-              from <a href="https://w3.bilkent.edu.tr/bilkent/">Bilkent University</a> in 2016 and 2018, respectively, where I worked with
-              Prof. <a href="http://kilyos.ee.bilkent.edu.tr/~kozat/">Suleyman Serdar Kozat</a>.
-          <br>
-    			<br/>
-  			
-      	</div>
-    </div>
-        
-
-             <p style="text-align:center;font-size:18px" >
-             <a class="link link_email" href="mailto:tergen@lgresearch.ai"><i class="fa fa-envelope big-icon" style="font-size:28px"></i><font size="5">Email</font></a> &nbsp
-             <a class="link link_cv" href="data/CV_Tolga_Ergen.pdf"><i class="fa fa-file big-icon" style="font-size:28px"></i><font size="5">CV</font></a> &nbsp
-             <a class="link link_scholar" href="https://scholar.google.com.tr/citations?user=T1pWaCsAAAAJ&hl=en"><i class="fa fa-graduation-cap big-icon" style="font-size:28px"></i><font size="5">Scholar</font></a> &nbsp
-             <a class="link link_twitter" href="https://twitter.com/tolgaergen_"><i class="fa fa-twitter big-icon" style="font-size:28px"></i><font size="5">Twitter</font></a> &nbsp
-             <a class="link link_git" href="https://github.com/tolgaergen" ><i class="fa fa-github big-icon" style="font-size:28px"></i><font size="5">Github</font></a> 
-           </p>
-             
-    <div class="container">
-		<h2>News</h2>
-    	<ul>
-        <li>(Feb 2025) Our paper on <a href="https://arxiv.org/abs/2312.12657">convex optimization theory and sparse recovery model </a> has been accepted to IEEE Transactions on Information Theory.</li>
-        <li>(Jan 2025) Our paper accepted at <a href="https://2025.naacl.org/"> <strong> NAACL 2025</strong> </a> </a>! We introduce <a href="https://arxiv.org/abs/2406.06357"> MASSW</a>, a large-scale and comprehensive text dataset on Multi-Aspect Summarization of Scientific Workflows for AI-assisted scientific innovation.
-        <li>(Dec 2024) A new preprint out! We introduce <a href="https://arxiv.org/abs/2412.18673"> Map2Text</a>, new content generation from low-dimensional visualizations.
-        <li>(Oct 2024) A new preprint out! We introduce <a href="https://arxiv.org/abs/2410.14826"> SPRIG</a>, improving large language model performance by system prompt optimization.
-        <li>(Jan 2024) Our paper accepted at <a href="https://iclr.cc/"> <strong> ICLR 2024</strong> </a> </a>: We extend <a href="https://openreview.net/forum?id=ikmuHqugN7"> Burer Monteiro</a> from linear matrix factorization to neural networks with convolution, fully-connected, and self-attention layers
-         <li>(Sep 2023) Two papers accepted at <a href="https://neurips.cc/"> <strong> NeurIPS 2023</strong> </a> </a>: We analyze <a href="https://openreview.net/forum?id=Z1Aj59LoZD">pathwise regularized deep neural network training problems</a> through convex optimization and relate similar analyses to the <a href="https://openreview.net/forum?id=YWsPN0EMZr">NTK</a> of deep neural networks.</li>
-         <li>(Jul 2023) I joined <a href="https://www.lgresearch.ai/">LG AI Research</a> as a Research Scientist.</li>
-         <li>(Jun 2023) I successfully defended my Ph.D. dissertation and graduated from Stanford University.</li>
-         <li>(Jan 2023) Two papers accepted at <a href="https://iclr.cc/"> <strong> ICLR 2023</strong> </a> </a>: We study the globally optimal training of <a href="https://openreview.net/forum?id=_9k5kTgyHT"> threshold/binary networks</a> and <a href="https://openreview.net/forum?id=6zrOr_Rdhjs">duality gap</a> of deep neural networks.</li>
-        <li>(Nov 2022) A new preprint out! We develop a convex optimization perspective for <a href="https://arxiv.org/abs/2211.11052"> transformer networks</a>.</li>
-        <li>(June 2022) I joined <a href="https://research.google/">Google Research</a> as a research intern.</li>
-        <li>(May 2022) Our paper accepted at <a href="https://icml.cc/"> <strong> ICML 2022</strong> </a> </a>: We analyze <a href="https://proceedings.mlr.press/v162/sahiner22a.html"> attention</a> in vision transformers via convex optimization.</li>
-        <li>(Feb 2022) I've been awarded <a href="https://research.adobe.com/fellowship/previous-fellowship-award-winners/"> <strong> 2022 Adobe Research Fellowship</strong> </a>.
-        <li>(Jan 2022) Two papers accepted at <a href="https://iclr.cc/"> <strong> ICLR 2022</strong> </a> </a>: We analyze <a href="https://openreview.net/pdf?id=6XGgutacQ0B"> Batchnorm</a>  and <a href="https://openreview.net/pdf?id=e2Lle5cij9D">GANs</a> via convex optimization.</li>
-        <li>(Nov 2021) I will give a talk at <a href="https://deepmath-conference.com/"> <strong> DeepMath 2021</strong> </a></a> as the  <strong>best poster award winner</strong>.
-        <li>(Oct 2021) I was selected to receive a <a href="https://neurips.cc/"> <strong>NeurIPS 2021 Outstanding Reviewer Award </strong></a>  given to <strong>the top 8% of reviewers</strong>.
-        <li>(Sep 2021) New arXiv preprint: We analyze <a href="https://arxiv.org/abs/2110.09548">path regularized ReLU networks </a> via convex duality.</li>
-        <li>(Sep 2021) A new preprint out! We exactly characterize <a href="https://arxiv.org/abs/2110.06482"> duality gap for parallel deep networks</a>.</li>
-       	<li>(Aug 2021) Our paper on <a href="https://jmlr.org/papers/v22/20-1447.html">convex analysis of ReLU networks </a> has been accepted to JMLR.</li>
-   	    <li>(June 2021) I received <strong>the outstanding paper award </strong> at <a href="https://www.2021.ieeeicassp.org/2021.ieeeicassp.org/default.html"> <strong> ICASSP 2021</strong> </a> </a>.
-        <li>(June 2021) I joined <a href="https://einstein.ai/">Salesforce Research</a> as a research intern.</li>
-        <li>(July 2021) A new preprint out! We analyze the training of <a href="https://arxiv.org/abs/2107.05680">Wasserstein GANs</a> through the lens of convex duality.</li>
-        <li>(May 2021) Two papers accepted at <a href="https://icml.cc/"><strong> ICML 2021</strong> </a>: Topics include <a href="http://proceedings.mlr.press/v139/ergen21a">globally optimal training </a>  and <a href="http://proceedings.mlr.press/v139/ergen21b">convex analysis</a> of deep neural networks. </li>
-        <li>(Jan 2021) Two papers accepted at <a href="https://iclr.cc/"> <strong> ICLR 2021</strong> </a> </a>: We introduce exact convex programs for <a href="https://openreview.net/pdf?id=0N8jUH4JMv6"> convolutional</a>  and <a href="https://openreview.net/pdf?id=fGF8qAqpXXG">vector-output</a> ReLU networks.</li>
-  	     <li>(Dec 2020) I received <strong>the best poster award </strong> at <a href="https://deepmath-conference.com/"> <strong> DeepMath 2020</strong>  </a>.
-
-   	</ul>
- 	</div>
-	
-	<div class="container">
-		<h2>Education</h2>
-
-   <table width="100%" align="center" border="0" cellpadding="20"><tbody>
-
-          <tr>
-            <td style="padding:20px;width:15%;vertical-align:middle"><img src="images/stanford.png" style="width:100px;height:100px;"></td>
-            <td width="70%" valign="center">
-             Ph. D., <a href="https://ee.stanford.edu/", target="_blank">Electrical Engineering</a>, <a href="https://www.stanford.edu", target="_blank">Stanford University</a>, 2018-2023<br/>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:20px;width:20%;vertical-align:middle">
-              <img src="images/bilkent.png" style="width:100px;height:100px;" >
-            </td>
-             <td width="75%" valign="center">
-            	M. S., <a href="https://ee.bilkent.edu.tr/en/">Electrical and Electronics Engineering</a>, <a href="https://w3.bilkent.edu.tr/bilkent/", target="_blank">Bilkent University</a>, 2018<br/> 
-            	B. S., <a href="https://ee.bilkent.edu.tr/en/">Electrical and Electronics Engineering</a>, <a href="https://w3.bilkent.edu.tr/bilkent/", target="_blank">Bilkent University</a>, 2016<br/> 
-            </td>
-          </tr>
-        </tbody></table>
-	</div>
-	<div class="container">
-		<h2>Work Experience</h2>
-
-   <table width="100%" align="center" border="0" cellpadding="20"><tbody>
-          <tr>
-            <td style="padding:20px;width:15%;vertical-align:middle"><img src="images/LG_logo.png" style="width:100px;height:100px;"></td>
-            <td width="70%" valign="center">
-             Research Scientist, <a href="https://www.lgresearch.ai/", target="_blank">LG AI Research</a>,  Jul 2023 - Present<br/>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:20px;width:15%;vertical-align:middle"><img src="images/google_logo.png" style="width:100px;height:100px;"></td>
-            <td width="70%" valign="center">
-             Research Intern, <a href="https://research.google/", target="_blank">Google Research</a>,  Jun 2022 - Sept 2022<br/>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:20px;width:20%;vertical-align:middle">
-              <img src="images/salesforce_logo.png" style="width:100px;height:100px;" >
-            </td>
-             <td width="75%" valign="center">
-            	Research Intern, <a href="https://einstein.ai/", target="_blank">Salesforce Research</a>, Jun 2021 - Sept 2021<br/> 
-            </td>
-          </tr>
-        </tbody></table>
-	</div>
-  <div class="container">
-    <h2>Teaching</h2>
-<table width="100%" align="center" border="0" cellpadding="20"><tbody>
-
-          <tr>
-            <td style="padding:20px;width:15%;vertical-align:middle"><img src="images/stanford.png" style="width:100px;height:100px;"></td>
-            <td width="70%" valign="center">
-              (Fall 2019, 2020, 2021) <a href="http://web.stanford.edu/class/ee269/", target="_blank">EE269</a>, Signal Processing for Machine Learning, TA
-              <br>
-              (Winter 2020, 2021) <a href="http://web.stanford.edu/class/ee270/", target="_blank">EE270</a>, Large Scale Matrix Computation, Optimization and Learning, TA
-              <br>
-              (Spring 2020, 2021) <a href="http://web.stanford.edu/class/ee364b/", target="_blank">EE364B</a>,  Convex Optimization II, TA
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:20px;width:20%;vertical-align:middle">
-              <img src="images/bilkent.png" style="width:100px;height:100px;" >
-            </td>
-             <td width="75%" valign="center">
-              (Fall 2016, 2017, Spring 2018) <a href="https://stars.bilkent.edu.tr/syllabus/view/EEE/424/EE_BS/", target="_blank">EEE424</a>,  Digital Signal Processing, TA
-              <br>
-              (Spring 2018) <a href="https://stars.bilkent.edu.tr/syllabus/view/EEE/102/20151?section=1", target="_blank">EEE102</a>, Introduction to Digital Circuit Design, TA
-            </td>
-          </tr>
-        </tbody></table>
-  </div>
-
-  <div class="container">
-    <h2>Academic Service</h2>
-             <ul> Reviewer for NeurIPS, ICML, ICLR, IEEE TNNLS, IEEE SPL</ul>
-  </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-  </body>
-
-
+  <script src="js/site.js"></script>
+</body>
+</html>

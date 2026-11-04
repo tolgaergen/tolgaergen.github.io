@@ -1,1007 +1,469 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Academic Website">
-    <meta name="author" content="Tolga Ergen">
-    <meta name="keywords" content="Stanford, Optimization, Deep Learning, Neural Networks, Research">
-    <title>Tolga Ergen</title>
-    <link href="css/bootstrap.min2.css" rel="stylesheet">
-    <link href="css/non-responsive.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">Tolga Ergen</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li class="active"><a href="#">Research</a></li>
-	    
-			<!--/<li><a href="software.html">software</a></li>-->
-	   
-          </ul>
-        </div><!--/.nav-collapse -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Publications · Tolga Ergen</title>
+  <meta name="description" content="Tolga Ergen is a Research Scientist at LG AI Research working on optimization, deep learning, and large language models. Ph.D. in Electrical Engineering, Stanford University.">
+  <meta name="author" content="Tolga Ergen">
+  <meta name="keywords" content="Tolga Ergen, LG AI Research, Stanford, Optimization, Deep Learning, Large Language Models, Convex Optimization, Neural Networks">
+  <meta property="og:title" content="Tolga Ergen">
+  <meta property="og:description" content="Research Scientist at LG AI Research. Optimization, deep learning, and large language models.">
+  <meta property="og:image" content="https://tolgaergen.github.io/images/tolga2.jpg">
+  <meta property="og:type" content="website">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" type="image/png" href="images/seal_icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="wrap">
+      <a class="brand" href="index.html">Tolga Ergen</a>
+      <ul>
+        <li><a class="nl" href="index.html">Home</a></li>
+        <li class="opt"><a class="nl" href="index.html#news">News</a></li>
+        <li class="opt"><a class="nl" href="index.html#experience">Experience</a></li>
+        <li><a class="nl active" href="research.html">Publications</a></li>
+        <li><a class="nl" href="data/CV_Tolga_Ergen.pdf">CV</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-head">
+      <div class="wrap">
+        <p class="eyebrow">Research</p>
+        <h1>Publications</h1>
+        <p>My work spans large language models and agents, data generation, and optimization, with a long line of work on convex optimization theory for deep neural networks. For an up-to-date list, see <a href="https://scholar.google.com.tr/citations?user=T1pWaCsAAAAJ&hl=en">Google Scholar</a>.</p>
       </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="toolbar">
+          <div class="filters"><button class="chip on" data-topic="all" aria-pressed="true">All<span class="n">40</span></button><button class="chip" data-topic="llm" aria-pressed="false">LLMs &amp; AI for Science<span class="n">3</span></button><button class="chip" data-topic="convex" aria-pressed="false">Convex Optimization &amp; Deep Learning Theory<span class="n">23</span></button><button class="chip" data-topic="online" aria-pressed="false">Online Learning &amp; Signal Processing<span class="n">14</span></button></div>
+          <label class="search"><i class="fa-solid fa-magnifying-glass"></i><input id="q" type="search" placeholder="Search titles, authors, venues…" aria-label="Search publications"></label>
+        </div>
+        <ul class="pubs">
+        <li class="pub" data-topic="convex">
+          <a class="thumb" href="https://arxiv.org/abs/2312.12657" tabindex="-1" aria-hidden="true"><img src="images/weight_norm.png" alt="" loading="lazy"></a>
+          <div>
+            <h3><a href="https://arxiv.org/abs/2312.12657">The Convex Landscape of Neural Networks: Characterizing Global Optima and Stationary Points via Lasso Models</a></h3>
+            <p class="authors"><b>Tolga Ergen</b>, Mert Pilanci</p>
+            <div class="meta"><span class="venue">IEEE Transactions on Information Theory</span></div>
+            <div class="links"><a href="https://arxiv.org/abs/2312.12657"><i class="fa-solid fa-scroll"></i>arXiv</a></div>
+            <div class="kws"><span>convex optimization</span><span>sparse models</span><span>deep neural networks</span></div>
+          </div>
+        </li>
+        <li class="pub" data-topic="llm">
+          <a class="thumb" href="https://arxiv.org/abs/2406.06357" tabindex="-1" aria-hidden="true"><img src="images/sprig.png" alt="" loading="lazy"></a>
+          <div>
+            <h3><a href="https://arxiv.org/abs/2406.06357">SPRIG: Improving Large Language Model Performance by System Prompt Optimization</a></h3>
+            <p class="authors">Lechen Zhang, <b>Tolga Ergen</b>, Lajanugen Logeswaran, Moontae Lee, and David Jurgens</p>
+            <div class="meta"><span class="venue pre">Preprint</span></div>
+            <div class="links"><a href="https://arxiv.org/abs/2406.06357"><i class="fa-solid fa-scroll"></i>arXiv</a></div>
+            <div class="kws"><span>prompt optimization</span><span>Large Language Models (LLMs)</span></div>
+          </div>
+        </li>
+        <li class="pub" data-topic="llm">
+          <a class="thumb" href="https://arxiv.org/abs/2412.18673" tabindex="-1" aria-hidden="true"><img src="images/map2text.png" alt="" loading="lazy"></a>
+          <div>
+            <h3><a href="https://arxiv.org/abs/2412.18673">Map2Text: New Content Generation from Low-Dimensional Visualizations</a></h3>
+            <p class="authors">Xingjian Zhang, Ziyang Xiong, Shixuan Liu, Yutong Xie, <b>Tolga Ergen</b>, Dongsub Shim, Hua Xu, Honglak Lee, Qiaozhu Mei</p>
+            <div class="meta"><span class="venue pre">Preprint</span></div>
+            <div class="links"><a href="https://arxiv.org/abs/2412.18673"><i class="fa-solid fa-scroll"></i>arXiv</a></div>
+            <div class="kws"><span>ai for science</span><span>scientific workflow</span><span>Large Language Models (LLMs)</span></div>
+          </div>
+        </li>
+        <li class="pub" data-topic="llm">
+          <a class="thumb" href="https://arxiv.org/abs/2406.06357" tabindex="-1" aria-hidden="true"><img src="images/massw.png" alt="" loading="lazy"></a>
+          <div>
+            <h3><a href="https://arxiv.org/abs/2406.06357">MASSW: A New Dataset and Benchmark Tasks for AI-Assisted Scientific Workflows</a></h3>
+            <p class="authors">Xingjian Zhang, Yutong Xie, Jin Huang, Jinge Ma, Zhaoying Pan, Qijia Liu, Ziyang Xiong, <b>Tolga Ergen</b>, Dongsub Shim, Honglak Lee, Qiaozhu Mei</p>
+            <div class="meta"><span class="venue">NAACL 2025</span></div>
+            <div class="links"><a href="https://arxiv.org/abs/2406.06357"><i class="fa-solid fa-scroll"></i>arXiv</a></div>
+            <div class="kws"><span>ai for science</span><span>scientific workflow</span><span>Large Language Models (LLMs)</span></div>
+          </div>
+        </li>
+        <li class="pub" data-topic="convex">
+          <a class="thumb" href="https://openreview.net/forum?id=ikmuHqugN7" tabindex="-1" aria-hidden="true"><img src="images/BM.png" alt="" loading="lazy"></a>
+          <div>
+            <h3><a href="https://openreview.net/forum?id=ikmuHqugN7">Scaling Convex Neural Networks with Burer-Monteiro Factorization</a></h3>
+            <p class="authors">Arda Sahiner, <b>Tolga Ergen</b>, Batu Ozturkler, John Pauly, Morteza Mardani, Mert Pilanci</p>
+            <div class="meta"><span class="venue">ICLR 2024</span></div>
+            <div class="links"><a href="https://openreview.net/forum?id=ikmuHqugN7"><i class="fa-solid fa-book-open"></i>Proceeding</a></div>
+            <div class="kws"><span>Burer Monteiro Factorization</span><span>convex optimizations</span><span>neural networks</span></div>
+          </div>
+        </li>
+        <li class="pub" data-topic="convex">
+          <a class="thumb" href="https://arxiv.org/abs/2403.01046" tabindex="-1" aria-hidden="true"><img src="images/lowdim.png" alt="" loading="lazy"></a>
+          <div>
+            <h3><a href="https://arxiv.org/abs/2403.01046">A Library of Mirrors: Deep Neural Nets in Low Dimensions are Convex Lasso Models with Reflection Features</a></h3>
+            <p class="authors">Emi Zeger, Yifei Wang, Aaron Mishkin, <b>Tolga Ergen</b>, Emmanuel Candès, Mert Pilanci</p>
+            <div class="meta"><span class="venue pre">Preprint</span></div>
+            <div class="links"><a href="https://arxiv.org/abs/2403.01046"><i class="fa-solid fa-scroll"></i>arXiv</a></div>
+            <div class="kws"><span>deep neural networks</span><span>convex geometry</span><span>Lasso</span></div>
+          </div>
+        </li>
+        <li class="pub" data-topic="convex">
+          <a class="thumb" href="https://arxiv.org/abs/2110.09548" tabindex="-1" aria-hidden="true"><img src="images/path.png" alt="" loading="lazy"></a>
+          <div>
+            <h3><a href="https://arxiv.org/abs/2110.09548">Path Regularization: A Convexity and Sparsity Inducing Regularization for Parallel ReLU Networks</a></h3>
+            <p class="authors"><b>Tolga Ergen</b>, Mert Pilanci</p>
+            <div class="meta"><span class="venue">NeurIPS 2023</span></div>
+            <div class="links"><a href="https://arxiv.org/abs/2110.09548"><i class="fa-solid fa-scroll"></i>arXiv</a><a href="https://openreview.net/forum?id=Z1Aj59LoZD"><i class="fa-solid fa-book-open"></i>Proceeding</a></div>
+            <div class="kws"><span>deep neural networks</span><span>convex optimization</span><span>path norm</span></div>
+          </div>
+        </li>
+        <li class="pub" data-topic="convex">
+          <a class="thumb" href="https://arxiv.org/abs/2309.15096" tabindex="-1" aria-hidden="true"><img src="images/fixing_the_ntk.png" alt="" loading="lazy"></a>
+          <div>
+            <h3><a href="https://arxiv.org/abs/2309.15096">Fixing the NTK: From Neural Network Linearizations to Exact Convex Programs</a></h3>
+            <p class="authors">Rajat Dwaraknath, <b>Tolga Ergen</b>, Mert Pilanci</p>
+            <div class="meta"><span class="venue">NeurIPS 2023</span></div>
+            <div class="links"><a href="https://arxiv.org/abs/2309.15096"><i class="fa-solid fa-scroll"></i>arXiv</a><a href="https://openreview.net/forum?id=YWsPN0EMZr"><i class="fa-solid fa-book-open"></i>Proceeding</a></div>
+            <div class="kws"><span>deep neural networks</span><span>convex optimization</span><span>neural tangent kernel (NTK)</span></div>
+          </div>
+        </li>
+        <li class="pub" data-topic="convex">
+          <a class="thumb" href="https://openreview.net/forum?id=_9k5kTgyHT" tabindex="-1" aria-hidden="true"><img src="images/threshold.png" alt="" loading="lazy"></a>
+          <div>
+            <h3><a href="https://openreview.net/forum?id=_9k5kTgyHT">Globally Optimal Training of Neural Networks with Threshold Activation Functions</a></h3>
+            <p class="authors"><b>Tolga Ergen</b>, Ibrahim Gulluk, Jonathan Lacotte, Mert Pilanci</p>
+            <div class="meta"><span class="venue">ICLR 2023</span></div>
+            <div class="links"><a href="https://arxiv.org/abs/2303.03382"><i class="fa-solid fa-scroll"></i>arXiv</a><a href="https://openreview.net/forum?id=_9k5kTgyHT"><i class="fa-solid fa-book-open"></i>Proceeding</a></div>
+            <div class="kws"><span>threshold/binary activations</span><span>deep neural networks</span></div>
+          </div>
+        </li>
+        <li class="pub" data-topic="convex">
+          <a class="thumb" href="https://arxiv.org/abs/2110.06482" tabindex="-1" aria-hidden="true"><img src="images/dual_gap.png" alt="" loading="lazy"></a>
+          <div>
+            <h3><a href="https://arxiv.org/abs/2110.06482">Parallel Deep Neural Networks Have Zero Duality Gap</a></h3>
+            <p class="authors">Yifei Wang, <b>Tolga Ergen</b>, Mert Pilanci</p>
+            <div class="meta"><span class="venue">ICLR 2023</span></div>
+            <div class="links"><a href="https://arxiv.org/abs/2110.06482"><i class="fa-solid fa-scroll"></i>arXiv</a><a href="https://openreview.net/forum?id=6zrOr_Rdhjs"><i class="fa-solid fa-book-open"></i>Proceeding</a></div>
+            <div class="kws"><span>duality gap</span><span>convex optimization</span><span>deep neural networks</span></div>
+          </div>
+        </li>
+        <li class="pub" data-topic="convex">
+          <a class="thumb" href="https://arxiv.org/abs/2205.08078" tabindex="-1" aria-hidden="true"><img src="images/attention3.png" alt="" loading="lazy"></a>
+          <div>
+            <h3><a href="https://arxiv.org/abs/2205.08078">Convexifying Transformers: Improving optimization and understanding of transformer networks</a></h3>
+            <p class="authors"><b>Tolga Ergen</b>, Behnam Neyshabur, Harsh Mehta</p>
+            <div class="meta"><span class="venue pre">Preprint</span></div>
+            <div class="links"><a href="https://arxiv.org/abs/2211.11052"><i class="fa-solid fa-scroll"></i>arXiv</a></div>
+            <div class="kws"><span>self-attention</span><span>transformer</span><span>convex optimization</span></div>
+          </div>
+        </li>
+        <li class="pub" data-topic="convex">
+          <a class="thumb" href="https://arxiv.org/abs/2205.08078" tabindex="-1" aria-hidden="true"><img src="images/constrained_nuclear.png" alt="" loading="lazy"></a>
+          <div>
+            <h3><a href="https://arxiv.org/abs/2205.08078">Unraveling Attention via Convex Duality: Analysis and Interpretations of Vision Transformers</a></h3>
+            <p class="authors">Arda Sahiner, <b>Tolga Ergen</b>, Batu Ozturkler, John Pauly, Morteza Mardani, Mert Pilanci</p>
+            <div class="meta"><span class="venue">ICML 2022</span></div>
+            <div class="links"><a href="https://arxiv.org/abs/2205.08078"><i class="fa-solid fa-scroll"></i>arXiv</a><a href="https://proceedings.mlr.press/v162/sahiner22a.html"><i class="fa-solid fa-book-open"></i>Proceeding</a></div>
+            <div class="kws"><span>attention</span><span>vision transformer</span><span>convex duality</span></div>
+          </div>
+        </li>
+        <li class="pub" data-topic="convex">
+          <a class="thumb" href="https://arxiv.org/abs/2103.01499" tabindex="-1" aria-hidden="true"><img src="images/batchnorm.png" alt="" loading="lazy"></a>
+          <div>
+            <h3><a href="https://arxiv.org/abs/2103.01499">Demystifying Batch Normalization in ReLU Networks: Equivalent Convex Optimization Models and Implicit Regularization</a></h3>
+            <p class="authors"><b>Tolga Ergen*</b>, Arda Sahiner*, Batu Ozturkler, John Pauly, Morteza Mardani, Mert Pilanci</p>
+            <div class="meta"><span class="venue">ICLR 2022</span></div>
+            <div class="links"><a href="https://arxiv.org/abs/2103.01499"><i class="fa-solid fa-scroll"></i>arXiv</a><a href="https://openreview.net/pdf?id=6XGgutacQ0B"><i class="fa-solid fa-book-open"></i>Proceeding</a></div>
+            <div class="kws"><span>neural networks</span><span>convex analysis</span></div>
+          </div>
+        </li>
+        <li class="pub" data-topic="convex">
+          <a class="thumb" href="https://arxiv.org/abs/2107.05680" tabindex="-1" aria-hidden="true"><img src="images/convex_gan.png" alt="" loading="lazy"></a>
+          <div>
+            <h3><a href="https://arxiv.org/abs/2107.05680">Hidden Convexity of Wasserstein GANs: Interpretable Generative Models with Closed-Form Solutions</a></h3>
+            <p class="authors">Arda Sahiner*, <b>Tolga Ergen*</b>, Batu Ozturkler, Burak Bartan, John Pauly, Morteza Mardani, Mert Pilanci</p>
+            <div class="meta"><span class="venue">ICLR 2022</span></div>
+            <div class="links"><a href="https://arxiv.org/abs/2107.05680"><i class="fa-solid fa-scroll"></i>arXiv</a><a href="https://openreview.net/pdf?id=e2Lle5cij9D"><i class="fa-solid fa-book-open"></i>Proceeding</a></div>
+            <div class="kws"><span>generative adversarial networks</span><span>convex-concave games</span><span>convex duality</span></div>
+          </div>
+        </li>
+        <li class="pub" data-topic="convex">
+          <a class="thumb" href="https://jmlr.org/papers/v22/20-1447.html" tabindex="-1" aria-hidden="true"><img src="images/convex_dualgeo2.png" alt="" loading="lazy"></a>
+          <div>
+            <h3><a href="https://jmlr.org/papers/v22/20-1447.html">Convex Geometry and Duality of Over-parameterized Neural Networks</a></h3>
+            <p class="authors"><b>Tolga Ergen</b>, Mert Pilanci</p>
+            <div class="meta"><span class="venue">JMLR</span></div>
+            <div class="links"><a href="https://arxiv.org/abs/2002.11219"><i class="fa-solid fa-scroll"></i>arXiv</a><a href="https://jmlr.org/papers/v22/20-1447.html"><i class="fa-solid fa-book-open"></i>Proceeding</a></div>
+            <div class="kws"><span>neural networks</span><span>convex analysis</span><span>non-convex optimization</span></div>
+          </div>
+        </li>
+        <li class="pub" data-topic="convex">
+          <a class="thumb" href="http://proceedings.mlr.press/v139/ergen21b.html" tabindex="-1" aria-hidden="true"><img src="images/deep_dual.jpg" alt="" loading="lazy"></a>
+          <div>
+            <h3><a href="http://proceedings.mlr.press/v139/ergen21b.html">Revealing the Structure of Deep Neural Networks via Convex Duality</a></h3>
+            <p class="authors"><b>Tolga Ergen</b>, Mert Pilanci</p>
+            <div class="meta"><span class="venue">ICML 2021</span></div>
+            <div class="links"><a href="https://arxiv.org/abs/2002.09773"><i class="fa-solid fa-scroll"></i>arXiv</a><a href="http://proceedings.mlr.press/v139/ergen21b"><i class="fa-solid fa-book-open"></i>Proceeding</a></div>
+            <div class="kws"><span>deep neural networks</span><span>convex duality</span><span>non-convex optimization</span></div>
+          </div>
+        </li>
+        <li class="pub" data-topic="convex">
+          <a class="thumb" href="http://proceedings.mlr.press/v139/ergen21a.html" tabindex="-1" aria-hidden="true"><img src="images/parallel_network.png" alt="" loading="lazy"></a>
+          <div>
+            <h3><a href="http://proceedings.mlr.press/v139/ergen21a.html">Global Optimality Beyond Two Layers: Training Deep ReLU Networks via Convex Programs</a></h3>
+            <p class="authors"><b>Tolga Ergen</b>, Mert Pilanci</p>
+            <div class="meta"><span class="venue">ICML 2021</span></div>
+            <div class="links"><a href="https://arxiv.org/abs/2110.05518"><i class="fa-solid fa-scroll"></i>arXiv</a><a href="http://proceedings.mlr.press/v139/ergen21a"><i class="fa-solid fa-book-open"></i>Proceeding</a></div>
+            <div class="kws"><span>deep neural networks</span><span>convex optimization</span></div>
+          </div>
+        </li>
+        <li class="pub" data-topic="convex">
+          <a class="thumb" href="https://openreview.net/pdf?id=0N8jUH4JMv6" tabindex="-1" aria-hidden="true"><img src="images/convex_cnn.jpg" alt="" loading="lazy"></a>
+          <div>
+            <h3><a href="https://openreview.net/pdf?id=0N8jUH4JMv6">Implicit Convex Regularizers of CNN Architectures: Convex Optimization of Two- and Three-Layer Networks in Polynomial Time</a></h3>
+            <p class="authors"><b>Tolga Ergen</b>, Mert Pilanci</p>
+            <div class="meta"><span class="venue">ICLR 2021</span><span class="award"><i class="fa-solid fa-award"></i>Spotlight Presentation</span></div>
+            <div class="links"><a href="https://arxiv.org/2006.14798"><i class="fa-solid fa-scroll"></i>arXiv</a><a href="https://openreview.net/pdf?id=0N8jUH4JMv6"><i class="fa-solid fa-book-open"></i>Proceeding</a></div>
+            <div class="kws"><span>convolutional neural networks</span><span>convex optimization</span><span>deep learning</span></div>
+          </div>
+        </li>
+        <li class="pub" data-topic="convex">
+          <a class="thumb" href="https://openreview.net/pdf?id=fGF8qAqpXXG" tabindex="-1" aria-hidden="true"><img src="images/convex_nn_vector.png" alt="" loading="lazy"></a>
+          <div>
+            <h3><a href="https://openreview.net/pdf?id=fGF8qAqpXXG">Vector-output ReLU Neural Network Problems are Copositive Programs: Convex Analysis of Two Layer Networks and Polynomial-time Algorithms</a></h3>
+            <p class="authors">Arda Sahiner, <b>Tolga Ergen</b>, John Pauly, Mert Pilanci</p>
+            <div class="meta"><span class="venue">ICLR 2021</span></div>
+            <div class="links"><a href="https://arxiv.org/abs/2012.13329"><i class="fa-solid fa-scroll"></i>arXiv</a><a href="https://openreview.net/pdf?id=fGF8qAqpXXG"><i class="fa-solid fa-book-open"></i>Proceeding</a></div>
+            <div class="kws"><span>neural networks</span><span>convex analysis</span><span>non-convex optimization</span></div>
+          </div>
+        </li>
+        <li class="pub" data-topic="convex">
+          <a class="thumb" href="https://opt-ml.org/papers/2020/paper_39.pdf" tabindex="-1" aria-hidden="true"><img src="images/convex_cnn_twolayer.png" alt="" loading="lazy"></a>
+          <div>
+            <h3><a href="https://opt-ml.org/papers/2020/paper_39.pdf">Convex Programs for Global Optimization of Convolutional Neural Networks in Polynomial-Time</a></h3>
+            <p class="authors"><b>Tolga Ergen</b>, Mert Pilanci</p>
+            <div class="meta"><span class="venue">NeurIPS 2020 Workshop on Optimization for Machine Learning</span><span class="award"><i class="fa-solid fa-award"></i>Oral Presentation</span></div>
+            <div class="links"><a href="https://opt-ml.org/papers/2020/paper_39.pdf"><i class="fa-solid fa-file-pdf"></i>PDF</a></div>
+            <div class="kws"><span>convolutional neural networks</span><span>convex optimization</span><span>deep learning</span></div>
+          </div>
+        </li>
+        <li class="pub" data-topic="convex">
+          <a class="thumb" href="http://proceedings.mlr.press/v119/pilanci20a.html" tabindex="-1" aria-hidden="true"><img src="images/convex_nn.jpg" alt="" loading="lazy"></a>
+          <div>
+            <h3><a href="http://proceedings.mlr.press/v119/pilanci20a.html">Neural Networks are Convex Regularizers: Exact Polynomial-time Convex Optimization Formulations for Two-layer Networks</a></h3>
+            <p class="authors">Mert Pilanci, <b>Tolga Ergen</b></p>
+            <div class="meta"><span class="venue">ICML 2020</span></div>
+            <div class="links"><a href="https://arxiv.org/abs/2002.10553"><i class="fa-solid fa-scroll"></i>arXiv</a><a href="http://proceedings.mlr.press/v119/pilanci20a.html"><i class="fa-solid fa-book-open"></i>Proceeding</a></div>
+            <div class="kws"><span>neural networks</span><span>convex analysis</span><span>non-convex optimization</span></div>
+          </div>
+        </li>
+        <li class="pub" data-topic="convex">
+          <a class="thumb" href="http://proceedings.mlr.press/v108/ergen20a.html" tabindex="-1" aria-hidden="true"><img src="images/convex_geometry.jpeg" alt="" loading="lazy"></a>
+          <div>
+            <h3><a href="http://proceedings.mlr.press/v108/ergen20a.html">Convex Geometry of Two-Layer ReLU Networks: Implicit Autoencoding and Interpretable Models</a></h3>
+            <p class="authors"><b>Tolga Ergen</b>, Mert Pilanci</p>
+            <div class="meta"><span class="venue">AISTATS 2020</span></div>
+            <div class="links"><a href="http://proceedings.mlr.press/v108/ergen20a.html"><i class="fa-solid fa-book-open"></i>Proceeding</a></div>
+            <div class="kws"><span>neural networks</span><span>convex analysis</span><span>non-convex optimization</span></div>
+          </div>
+        </li>
+        <li class="pub" data-topic="convex">
+          <a class="thumb" href="https://ieeexplore.ieee.org/document/9413662" tabindex="-1" aria-hidden="true"><img src="images/convex_autoreg.png" alt="" loading="lazy"></a>
+          <div>
+            <h3><a href="https://ieeexplore.ieee.org/document/9413662">Convex Neural Autoregressive Models: Towards Tractable, Expressive, and Theoretically-Backed Models for Sequential Forecasting and Generator</a></h3>
+            <p class="authors">Vikul Gupta, Burak Bartan, <b>Tolga Ergen</b>, Mert Pilanci</p>
+            <div class="meta"><span class="venue">ICASSP 2021</span><span class="award"><i class="fa-solid fa-award"></i>Outstanding Paper Award</span></div>
+            <div class="links"><a href="https://ieeexplore.ieee.org/document/9413662"><i class="fa-solid fa-book-open"></i>Proceeding</a></div>
+            <div class="kws"><span>generative models</span><span>neural networks</span><span>convex optimization</span></div>
+          </div>
+        </li>
+        <li class="pub" data-topic="online">
+          <a class="thumb" href="https://www.sciencedirect.com/science/article/abs/pii/S1051200420300026" tabindex="-1" aria-hidden="true"><img src="images/distributed_svm.png" alt="" loading="lazy"></a>
+          <div>
+            <h3><a href="https://www.sciencedirect.com/science/article/abs/pii/S1051200420300026">A Novel Distributed Anomaly Detection Algorithm Based on Support Vector Machines</a></h3>
+            <p class="authors"><b>Tolga Ergen</b>, Serdar Kozat</p>
+            <div class="meta"><span class="venue">Digital Signal Processing</span></div>
+            <div class="links"><a href="https://www.sciencedirect.com/science/article/abs/pii/S1051200420300026"><i class="fa-solid fa-book-open"></i>Proceeding</a></div>
+            <div class="kws"><span>support vector machines</span><span>distributed optimization</span></div>
+          </div>
+        </li>
+        <li class="pub" data-topic="convex">
+          <a class="thumb" href="https://opt-ml.org/papers/2019/paper_34.pdf" tabindex="-1" aria-hidden="true"><img src="images/convex_cutting.png" alt="" loading="lazy"></a>
+          <div>
+            <h3><a href="https://opt-ml.org/papers/2019/paper_34.pdf">Convex Duality and Cutting Plane Methods for Over-parameterized Neural Networks</a></h3>
+            <p class="authors"><b>Tolga Ergen</b>, Mert Pilanci</p>
+            <div class="meta"><span class="venue">NeurIPS 2019 Workshop on Optimization for Machine Learning</span></div>
+            <div class="links"><a href="https://opt-ml.org/papers/2019/paper_34.pdf"><i class="fa-solid fa-file-pdf"></i>PDF</a></div>
+            <div class="kws"><span>neural networks</span><span>convex analysis</span><span>non-convex optimization</span></div>
+          </div>
+        </li>
+        <li class="pub" data-topic="convex">
+          <a class="thumb" href="https://drive.google.com/file/d/1x_ft76LXMD9-OKGnkdcJWcFLyXaPxo2x/view" tabindex="-1" aria-hidden="true"><img src="images/random_proj.png" alt="" loading="lazy"></a>
+          <div>
+            <h3><a href="https://drive.google.com/file/d/1x_ft76LXMD9-OKGnkdcJWcFLyXaPxo2x/view">Random Projections for Learning Non-convex Models</a></h3>
+            <p class="authors"><b>Tolga Ergen</b>, Mert Pilanci</p>
+            <div class="meta"><span class="venue">NeurIPS 2019 Workshop on Beyond First Order Methods in Machine Learning</span></div>
+            <div class="links"><a href="https://drive.google.com/file/d/1x_ft76LXMD9-OKGnkdcJWcFLyXaPxo2x/view"><i class="fa-solid fa-file-pdf"></i>PDF</a></div>
+            <div class="kws"><span>randomized algorithms</span><span>non-convex optimization</span></div>
+          </div>
+        </li>
+        <li class="pub" data-topic="convex">
+          <a class="thumb" href="https://ieeexplore.ieee.org/abstract/document/8919769" tabindex="-1" aria-hidden="true"><img src="images/convex_shallow.png" alt="" loading="lazy"></a>
+          <div>
+            <h3><a href="https://ieeexplore.ieee.org/abstract/document/8919769">Convex Optimization for Shallow Neural Networks</a></h3>
+            <p class="authors"><b>Tolga Ergen</b>, Mert Pilanci</p>
+            <div class="meta"><span class="venue">ALLERTON 2019</span></div>
+            <div class="links"><a href="https://ieeexplore.ieee.org/abstract/document/8919769"><i class="fa-solid fa-book-open"></i>Proceeding</a></div>
+            <div class="kws"><span>neural networks</span><span>convex optimization</span></div>
+          </div>
+        </li>
+        <li class="pub" data-topic="online">
+          <a class="thumb" href="https://ieeexplore.ieee.org/abstract/document/8836527" tabindex="-1" aria-hidden="true"><img src="images/energy_efficient.png" alt="" loading="lazy"></a>
+          <div>
+            <h3><a href="https://ieeexplore.ieee.org/abstract/document/8836527">Energy-Efficient LSTM Networks for Online Learning</a></h3>
+            <p class="authors"><b>Tolga Ergen</b>, Ali Mirza, Serdar Kozat</p>
+            <div class="meta"><span class="venue">IEEE TNNLS</span></div>
+            <div class="links"><a href="https://ieeexplore.ieee.org/abstract/document/8836527"><i class="fa-solid fa-book-open"></i>Proceeding</a></div>
+            <div class="kws"><span>recurrent neural networks</span><span>online learning</span><span>non-convex optimization</span></div>
+          </div>
+        </li>
+        <li class="pub" data-topic="online">
+          <a class="thumb" href="https://ieeexplore.ieee.org/abstract/document/8836638" tabindex="-1" aria-hidden="true"><img src="images/unsup_anomaly.png" alt="" loading="lazy"></a>
+          <div>
+            <h3><a href="https://ieeexplore.ieee.org/abstract/document/8836638">Unsupervised Anomaly Detection with LSTM Neural Networks</a></h3>
+            <p class="authors"><b>Tolga Ergen</b>, Serdar Kozat</p>
+            <div class="meta"><span class="venue">IEEE TNNLS</span></div>
+            <div class="links"><a href="https://arxiv.org/abs/1710.09207"><i class="fa-solid fa-scroll"></i>arXiv</a><a href="https://ieeexplore.ieee.org/abstract/document/8836638"><i class="fa-solid fa-book-open"></i>Proceeding</a></div>
+            <div class="kws"><span>recurrent neural networks</span><span>support vector machines</span><span>non-convex optimization</span></div>
+          </div>
+        </li>
+        <li class="pub" data-topic="online">
+          <a class="thumb" href="https://www.sciencedirect.com/science/article/abs/pii/S0165168418302688" tabindex="-1" aria-hidden="true"><img src="images/distributed_tree.png" alt="" loading="lazy"></a>
+          <div>
+            <h3><a href="https://www.sciencedirect.com/science/article/abs/pii/S0165168418302688">Team-Optimal Online Estimation of Dynamic Parameters over Distributed Tree Networks</a></h3>
+            <p class="authors">Fatih Kilic, <b>Tolga Ergen</b>, Muhammed Sayin, Serdar Kozat</p>
+            <div class="meta"><span class="venue">Signal Processing</span></div>
+            <div class="links"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0165168418302688"><i class="fa-solid fa-book-open"></i>Proceeding</a></div>
+            <div class="kws"><span>online learning</span><span>distributed optimization</span></div>
+          </div>
+        </li>
+        <li class="pub" data-topic="online">
+          <a class="thumb" href="https://ieeexplore.ieee.org/document/8169114" tabindex="-1" aria-hidden="true"><img src="images/distributed_lstm.png" alt="" loading="lazy"></a>
+          <div>
+            <h3><a href="https://ieeexplore.ieee.org/document/8169114">Online Training of LSTM Networks in Distributed Systems for Variable Length Data Sequences</a></h3>
+            <p class="authors"><b>Tolga Ergen</b>, Serdar Kozat</p>
+            <div class="meta"><span class="venue">IEEE TNNLS</span></div>
+            <div class="links"><a href="https://arxiv.org/abs/1710.08744"><i class="fa-solid fa-scroll"></i>arXiv</a><a href="https://ieeexplore.ieee.org/document/8169114"><i class="fa-solid fa-book-open"></i>Proceeding</a></div>
+            <div class="kws"><span>recurrent neural networks</span><span>distributed optimization</span></div>
+          </div>
+        </li>
+        <li class="pub" data-topic="online">
+          <a class="thumb" href="https://ieeexplore.ieee.org/abstract/document/8036280" tabindex="-1" aria-hidden="true"><img src="images/online_lstm.png" alt="" loading="lazy"></a>
+          <div>
+            <h3><a href="https://ieeexplore.ieee.org/abstract/document/8036280">Efficient Online Learning Algorithms Based on LSTM Neural Networks</a></h3>
+            <p class="authors"><b>Tolga Ergen</b>, Serdar Kozat</p>
+            <div class="meta"><span class="venue">IEEE TNNLS</span></div>
+            <div class="links"><a href="https://ieeexplore.ieee.org/abstract/document/8036280"><i class="fa-solid fa-book-open"></i>Proceeding</a></div>
+            <div class="kws"><span>recurrent neural networks</span><span>online learning</span></div>
+          </div>
+        </li>
+        <li class="pub" data-topic="online">
+          <a class="thumb" href="https://ieeexplore.ieee.org/document/8404708" tabindex="-1" aria-hidden="true"><img src="images/siu_efficient_regression.png" alt="" loading="lazy"></a>
+          <div>
+            <h3><a href="https://ieeexplore.ieee.org/document/8404708">A Highly Efficient Recurrent Neural Network Architecture for Data Regression</a></h3>
+            <p class="authors"><b>Tolga Ergen</b>, Emir Ceyani</p>
+            <div class="meta"><span class="venue">IEEE SIU 2018</span></div>
+            <div class="links"><a href="https://ieeexplore.ieee.org/document/8404708"><i class="fa-solid fa-book-open"></i>Proceeding</a></div>
+            <div class="kws"><span>recurrent neural networks</span><span>online learning</span></div>
+          </div>
+        </li>
+        <li class="pub" data-topic="online">
+          <a class="thumb" href="https://ieeexplore.ieee.org/document/8404676/" tabindex="-1" aria-hidden="true"><img src="images/siu_novel_anomaly.png" alt="" loading="lazy"></a>
+          <div>
+            <h3><a href="https://ieeexplore.ieee.org/document/8404676/">A Novel Anomaly Detection Approach Based on Neural Networks</a></h3>
+            <p class="authors"><b>Tolga Ergen</b>, Mine Kerpicci</p>
+            <div class="meta"><span class="venue">IEEE SIU 2018</span></div>
+            <div class="links"><a href="https://ieeexplore.ieee.org/document/8404676/"><i class="fa-solid fa-book-open"></i>Proceeding</a></div>
+            <div class="kws"><span>neural networks</span><span>non-convex optimization</span></div>
+          </div>
+        </li>
+        <li class="pub" data-topic="online">
+          <a class="thumb" href="https://ieeexplore.ieee.org/document/8404806" tabindex="-1" aria-hidden="true"><img src="images/siu_2.png" alt="" loading="lazy"></a>
+          <div>
+            <h3><a href="https://ieeexplore.ieee.org/document/8404806">Recurrent neural networks based online learning algorithms for distributed systems</a></h3>
+            <p class="authors"><b>Tolga Ergen</b>, Safa Sahin, Serdar Kozat</p>
+            <div class="meta"><span class="venue">IEEE SIU 2018</span></div>
+            <div class="links"><a href="https://ieeexplore.ieee.org/document/8404806"><i class="fa-solid fa-book-open"></i>Proceeding</a></div>
+            <div class="kws"><span>recurrent neural networks</span><span>distributed systems</span></div>
+          </div>
+        </li>
+        <li class="pub" data-topic="online">
+          <a class="thumb" href="http://150.162.46.34:8080/eusipco2017/papers/1570346404.pdf" tabindex="-1" aria-hidden="true"><img src="images/eusipco_lstm.png" alt="" loading="lazy"></a>
+          <div>
+            <h3><a href="http://150.162.46.34:8080/eusipco2017/papers/1570346404.pdf">Computationally Efficient Online Regression via LSTM Neural Networks</a></h3>
+            <p class="authors"><b>Tolga Ergen</b>, Serdar Kozat</p>
+            <div class="meta"><span class="venue">EUSIPCO 2017</span></div>
+            <div class="links"><a href="http://150.162.46.34:8080/eusipco2017/papers/1570346404.pdf"><i class="fa-solid fa-file-pdf"></i>PDF</a></div>
+            <div class="kws"><span>recurrent neural networks</span><span>online learning</span></div>
+          </div>
+        </li>
+        <li class="pub" data-topic="online">
+          <a class="thumb" href="https://ieeexplore.ieee.org/document/7960214/" tabindex="-1" aria-hidden="true"><img src="images/bandit.png" alt="" loading="lazy"></a>
+          <div>
+            <h3><a href="https://ieeexplore.ieee.org/document/7960214/">An Efficient Bandit Algorithm for General Weight Assignments</a></h3>
+            <p class="authors">Kaan Gokcesu, <b>Tolga Ergen</b>, Selami Ciftci, Serdar Kozat</p>
+            <div class="meta"><span class="venue">IEEE SIU 2017</span></div>
+            <div class="links"><a href="https://ieeexplore.ieee.org/document/7960214/"><i class="fa-solid fa-book-open"></i>Proceeding</a></div>
+            <div class="kws"><span>adversarial multi armed bandit</span><span>non-convex optimization</span></div>
+          </div>
+        </li>
+        <li class="pub" data-topic="online">
+          <a class="thumb" href="https://ieeexplore.ieee.org/document/7960218" tabindex="-1" aria-hidden="true"><img src="images/siu_online.png" alt="" loading="lazy"></a>
+          <div>
+            <h3><a href="https://ieeexplore.ieee.org/document/7960218">Neural Networks Based Online Learning</a></h3>
+            <p class="authors"><b>Tolga Ergen</b>, Serdar Kozat</p>
+            <div class="meta"><span class="venue">IEEE SIU 2017</span></div>
+            <div class="links"><a href="https://ieeexplore.ieee.org/document/7960218"><i class="fa-solid fa-book-open"></i>Proceeding</a></div>
+            <div class="kws"><span>neural networks</span><span>online learning</span></div>
+          </div>
+        </li>
+        <li class="pub" data-topic="online">
+          <a class="thumb" href="https://ieeexplore.ieee.org/document/7960213" tabindex="-1" aria-hidden="true"><img src="images/soft_novelty.png" alt="" loading="lazy"></a>
+          <div>
+            <h3><a href="https://ieeexplore.ieee.org/document/7960213">Novelty Detection Using Soft Partitioning and Hierarchical Models</a></h3>
+            <p class="authors"><b>Tolga Ergen</b>, Kaan Gokcesu, Mustafa Simsek, Serdar Kozat</p>
+            <div class="meta"><span class="venue">IEEE SIU 2017</span></div>
+            <div class="links"><a href="https://ieeexplore.ieee.org/document/7960213"><i class="fa-solid fa-book-open"></i>Proceeding</a></div>
+            <div class="kws"><span>online learning</span><span>non-convex optimization</span></div>
+          </div>
+        </li>
+        <li class="pub" data-topic="online">
+          <a class="thumb" href="https://ieeexplore.ieee.org/document/7960220" tabindex="-1" aria-hidden="true"><img src="images/siu_distributed.png" alt="" loading="lazy"></a>
+          <div>
+            <h3><a href="https://ieeexplore.ieee.org/document/7960220">Online Distributed Nonlinear Regression via Neural Networks</a></h3>
+            <p class="authors"><b>Tolga Ergen</b>, Serdar Kozat</p>
+            <div class="meta"><span class="venue">IEEE SIU 2017</span></div>
+            <div class="links"><a href="https://ieeexplore.ieee.org/document/7960220"><i class="fa-solid fa-book-open"></i>Proceeding</a></div>
+            <div class="kws"><span>neural networks</span><span>distributed optimization</span></div>
+          </div>
+        </li>
+        </ul>
+        <p class="empty" hidden>No publications match your search.</p>
+        <p class="legend">* denotes equal contribution.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 Tolga Ergen</span>
+      <span><a href="mailto:tergen@lgresearch.ai">tergen@lgresearch.ai</a></span>
     </div>
-    
-    <div class="container">
-    	<hr>
-		<h3>Research interests</h3>
-		<ul>
-		  <li> <b>Large Language Models (LLMs) & Agents</b>: Investigating the integration of large-scale language models with autonomous agents to develop adaptive, intelligent systems for a wide range of applications.</li>
-      <li> <b>Data Generation</b>: Developing innovative techniques for high-quality synthetic data creation to enhance model training, robustness, and performance. </li>
-		  <li> <b>Optimization</b>: Crafting computationally efficient optimization and training strategies that provide strong performance guarantees for deep neural networks and emerging large-scale models. </li>
-		</ul>
-    </div>
+  </footer>
 
-	<div class="container">
-	<hr>
-      	<h3>Publications</h3>
-	      	<table style="width:100%;border:10px;border-spacing:00px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-                <tr>
-            <td width="30%" >
-           
-            </td>
-          </tr>
-        <table style="width:100%;border:10px;border-spacing:30px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
- 
-
-
-<tr>
-          <td width="25%">
-            <div class="one">
-                <img src="images/weight_norm.png" style="width:200px;height:150px;">
-            </div>                
-              </td>
-              <td valign="middle" width="75%">
-      <p><a href="https://arxiv.org/abs/2312.12657">
-        <papertitle><strong>The Convex Landscape of Neural Networks: Characterizing Global Optima and Stationary Points via Lasso Models
-</strong></papertitle></a><br>
- <strong>Tolga Ergen</strong>, Mert Pilanci<br/> 
-                           <em>IEEE Transactions on Information Theory </em>&nbsp; <br> </p>
-    <a class="link link_arxiv" rel="external" href="https://arxiv.org/abs/2312.12657">arXiv</a>
-           </p>
-      
-              </p>
-     <p>
-              <a class="keyword"> convex optimization </a>
-              <a class="keyword">  sparse models </a>
-              <a class="keyword"> deep neural networks </a>
-                </p>
-              </td>
-            </tr>
-
-
-<tr>
-          <td width="25%">
-            <div class="one">
-                <img src="images/sprig.png" style="width:200px;height:150px;">
-            </div>                
-              </td>
-              <td valign="middle" width="75%">
-      <p><a href="https://arxiv.org/abs/2406.06357">
-        <papertitle><strong>SPRIG: Improving Large Language Model Performance by System Prompt Optimization
-</strong></papertitle></a><br>
- Lechen Zhang, <strong>Tolga Ergen </strong>, Lajanugen Logeswaran, Moontae Lee, and David Jurgens<br/> 
-        <a class="link link_arxiv" rel="external" href="https://arxiv.org/abs/2406.06357">arXiv</a>                        
-           </p>
-      
-              </p>
-     <p>
-              <a class="keyword"> prompt optimization </a>
-              <a class="keyword"> Large Language Models (LLMs) </a>
-                </p>
-              </td>
-            </tr>
-<tr>
-          <td width="25%">
-            <div class="one">
-                <img src="images/map2text.png" style="width:200px;height:150px;">
-            </div>                
-              </td>
-              <td valign="middle" width="75%">
-      <p><a href="https://arxiv.org/abs/2412.18673">
-        <papertitle><strong>Map2Text: New Content Generation from Low-Dimensional Visualizations
-</strong></papertitle></a><br>
- Xingjian Zhang, Ziyang Xiong, Shixuan Liu, Yutong Xie, <strong>Tolga Ergen</strong>, Dongsub Shim, Hua Xu, Honglak Lee, Qiaozhu Mei<br/> 
-        <a class="link link_arxiv" rel="external" href="https://arxiv.org/abs/2412.18673">arXiv</a>                        
-           </p>
-      
-              </p>
-     <p>
-              <a class="keyword"> ai for science </a>
-              <a class="keyword"> scientific workflow </a>
-              <a class="keyword"> Large Language Models (LLMs) </a>
-                </p>
-              </td>
-            </tr>
-<tr>
-          <td width="25%">
-            <div class="one">
-                <img src="images/massw.png" style="width:200px;height:150px;">
-            </div>                
-              </td>
-              <td valign="middle" width="75%">
-      <p><a href="https://arxiv.org/abs/2406.06357">
-        <papertitle><strong>MASSW: A New Dataset and Benchmark Tasks for AI-Assisted Scientific Workflows
-</strong></papertitle></a><br>
- Xingjian Zhang, Yutong Xie, Jin Huang, Jinge Ma, Zhaoying Pan, Qijia Liu, Ziyang Xiong, <strong>Tolga Ergen</strong>, Dongsub Shim, Honglak Lee, Qiaozhu Mei<br/> 
-                           <em>NAACL 2025 </em>&nbsp; <br> </p>
-        <a class="link link_arxiv" rel="external" href="https://arxiv.org/abs/2406.06357">arXiv</a>                        
-           </p>
-      
-              </p>
-     <p>
-              <a class="keyword"> ai for science </a>
-              <a class="keyword"> scientific workflow </a>
-              <a class="keyword"> Large Language Models (LLMs) </a>
-                </p>
-              </td>
-            </tr>
-
-<tr>
-          <td width="25%">
-            <div class="one">
-                <img src="images/BM.png" style="width:200px;height:150px;">
-            </div>                
-              </td>
-              <td valign="middle" width="75%">
-      <p><a href="https://openreview.net/forum?id=ikmuHqugN7">
-        <papertitle><strong>Scaling Convex Neural Networks with Burer-Monteiro Factorization
-</strong></papertitle></a><br>
- Arda Sahiner, <strong>Tolga Ergen</strong>, Batu Ozturkler, John Pauly, Morteza Mardani, Mert Pilanci<br/> 
-                          <em>ICLR 2024 </em>&nbsp; <br> </p>
-        <a class="link link_pdf" rel="external" href="https://openreview.net/forum?id=ikmuHqugN7">Proceeding</a>                        
-           </p>
-      
-              </p>
-     <p>
-              <a class="keyword"> Burer Monteiro Factorization </a>
-              <a class="keyword"> convex optimizations </a>
-              <a class="keyword"> neural networks </a>
-                </p>
-              </td>
-            </tr>
-
-
-<tr>
-          <td width="25%">
-            <div class="one">
-                <img src="images/lowdim.png" style="width:200px;height:150px;">
-            </div>                
-              </td>
-              <td valign="middle" width="75%">
-      <p><a href="https://arxiv.org/abs/2403.01046">
-        <papertitle><strong>A Library of Mirrors: Deep Neural Nets in Low Dimensions are Convex Lasso Models with Reflection Features
-</strong></papertitle></a><br>
- Emi Zeger, Yifei Wang, Aaron Mishkin, <strong>Tolga Ergen</strong>, Emmanuel Candès, Mert Pilanci<br/> </p> 
-        <a class="link link_arxiv" rel="external" href="https://arxiv.org/abs/2403.01046">arXiv</a>                        
-           </p>
-      
-              </p>
-     <p>
-              <a class="keyword"> deep neural networks </a>
-              <a class="keyword"> convex geometry </a>
-              <a class="keyword"> Lasso </a>
-                </p>
-              </td>
-            </tr>
-
-
-  <tr>
-          <td width="25%">
-            <div class="one">
-                <img src="images/path.png" style="width:200px;height:150px;">
-            </div>                
-              </td>
-              <td valign="middle" width="75%">
-      <p><a href="https://arxiv.org/abs/2110.09548">
-        <papertitle><strong>Path Regularization: A Convexity and Sparsity Inducing Regularization for Parallel ReLU Networks</strong></papertitle></a><br>
-<strong>Tolga Ergen</strong>, Mert Pilanci<br/> 
-                          <em>NeurIPS 2023 </em>&nbsp; <br> </p>
-    <a class="link link_arxiv" rel="external"  href="https://arxiv.org/abs/2110.09548">arXiv</a>
-        <a class="link link_pdf" rel="external" href="https://openreview.net/forum?id=Z1Aj59LoZD">Proceeding</a>                        
-               </p>
-     <p>
-              <a class="keyword"> deep neural networks </a>
-              <a class="keyword"> convex optimization </a>
-              <a class="keyword"> path norm </a>
-
-     </p>
-              </td>
-            </tr>
-
-    <tr>
-          <td width="25%">
-            <div class="one">
-                <img src="images/fixing_the_ntk.png" style="width:200px;height:150px;">
-            </div>                
-              </td>
-              <td valign="middle" width="75%">
-      <p><a href="https://arxiv.org/abs/2309.15096">
-        <papertitle><strong>Fixing the NTK: From Neural Network Linearizations to Exact Convex Programs</strong></papertitle></a><br>
-  Rajat Dwaraknath, <strong>Tolga Ergen</strong>, Mert Pilanci<br/> 
-                          <em>NeurIPS 2023 </em>&nbsp; <br> </p>
-    <a class="link link_arxiv" rel="external"  href="https://arxiv.org/abs/2309.15096">arXiv</a>   
-        <a class="link link_pdf" rel="external" href="https://openreview.net/forum?id=YWsPN0EMZr">Proceeding</a>                     
-               </p>
-     <p>
-              <a class="keyword"> deep neural networks </a>
-              <a class="keyword"> convex optimization </a>
-              <a class="keyword"> neural tangent kernel (NTK) </a>
-
-     </p>
-              </td>
-            </tr>
-
-   	<tr>
-          <td width="25%">
-            <div class="one">
-                <img src="images/threshold.png" style="width:200px;height:150px;">
-            </div>                
-              </td>
-              <td valign="middle" width="75%">
-		  <p><a href="https://openreview.net/forum?id=_9k5kTgyHT">
-        <papertitle><strong>Globally Optimal Training of Neural Networks with Threshold Activation Functions</strong></papertitle></a><br>
-<strong>Tolga Ergen</strong>, Ibrahim Gulluk, Jonathan Lacotte, Mert Pilanci<br/>
-                          <em>ICLR 2023 </em>&nbsp; <br> </p>
-		<a class="link link_arxiv" rel="external"  href="https://arxiv.org/abs/2303.03382">arXiv</a>
- 		<a class="link link_pdf" rel="external" href="https://openreview.net/forum?id=_9k5kTgyHT">Proceeding</a>          
-
-	           </p>
-     <p>
-              <a class="keyword"> threshold/binary activations </a>
-              <a class="keyword"> deep neural networks </a>
-
-     </p>
-              </td>
-            </tr>
-    
- 	<tr>
-          <td width="25%">
-            <div class="one">
-                <img src="images/dual_gap.png" style="width:200px;height:150px;">
-            </div>                
-              </td>
-              <td valign="middle" width="75%">
-		  <p><a href="https://arxiv.org/abs/2110.06482">
-        <papertitle><strong>Parallel Deep Neural Networks Have Zero Duality Gap</strong></papertitle></a><br>
-Yifei Wang, <strong>Tolga Ergen</strong>, Mert Pilanci<br/>
-                          <em>ICLR 2023 </em>&nbsp; <br> </p>
-		<a class="link link_arxiv" rel="external"  href="https://arxiv.org/abs/2110.06482">arXiv</a>
- 		<a class="link link_pdf" rel="external" href="https://openreview.net/forum?id=6zrOr_Rdhjs">Proceeding</a>          
-
-	           </p>
-     <p>
-              <a class="keyword"> duality gap </a>
-              <a class="keyword"> convex optimization </a>
-              <a class="keyword"> deep neural networks </a>
-
-     </p>
-              </td>
-            </tr>
-      
-<tr>
-          <td width="25%">
-            <div class="one">
-                <img src="images/attention3.png" style="width:200px;height:150px;">
-            </div>                
-              </td>
-              <td valign="middle" width="75%">
-		  <p><a href="https://arxiv.org/abs/2205.08078">
-        <papertitle><strong>Convexifying Transformers: Improving optimization and
-understanding of transformer networks</strong></papertitle></a><br>
- <strong>Tolga Ergen</strong>, Behnam Neyshabur, Harsh Mehta<br/> </p>
-		<a class="link link_arxiv" rel="external" href="https://arxiv.org/abs/2211.11052">arXiv</a>
-           </p>
-      
-              </p>
-     <p>
-              <a class="keyword"> self-attention </a>
-              <a class="keyword">  transformer </a>
-              <a class="keyword"> convex optimization </a>
-                </p>
-              </td>
-            </tr>
-
-<tr>
-          <td width="25%">
-            <div class="one">
-                <img src="images/constrained_nuclear.png" style="width:200px;height:150px;">
-            </div>                
-              </td>
-              <td valign="middle" width="75%">
-		  <p><a href="https://arxiv.org/abs/2205.08078">
-        <papertitle><strong>Unraveling Attention via Convex Duality:
-Analysis and Interpretations of Vision Transformers</strong></papertitle></a><br>
-Arda Sahiner, <strong>Tolga Ergen</strong>, Batu Ozturkler, John Pauly, Morteza Mardani, Mert Pilanci<br/> 
-                      <em>ICML 2022 </em>&nbsp; <br> </p>
-		<a class="link link_arxiv" rel="external" href="https://arxiv.org/abs/2205.08078">arXiv</a>
-		<a class="link link_pdf" rel="external" href="https://proceedings.mlr.press/v162/sahiner22a.html">Proceeding</a>          
-           </p>
-      
-              </p>
-     <p>
-              <a class="keyword"> attention </a>
-              <a class="keyword"> vision transformer </a>
-              <a class="keyword"> convex duality </a>
-                </p>
-              </td>
-            </tr>
-   
-
-         
-      
-           <html>
-
-
-
-
-      <tr>
-          <td width="30%" >
-            <div class="one">
-                <img src="images/batchnorm.png" style="width:200px;height:150px;">
-            </div>                
-              </td>
-  
-              <td valign="middle" width="70%">
-		  <p><a href="https://arxiv.org/abs/2103.01499">
-        <papertitle><strong>Demystifying Batch Normalization in ReLU Networks: Equivalent Convex Optimization Models and Implicit Regularization</strong></papertitle></a><br>
-<strong>Tolga Ergen*</strong>, Arda Sahiner*, Batu Ozturkler, John Pauly, Morteza Mardani, Mert Pilanci<br/> 
-                      <em>ICLR 2022 </em>&nbsp; <br> </p>
-		<a class="link link_arxiv" rel="external"  href="https://arxiv.org/abs/2103.01499">arXiv</a>
-		<a class="link link_pdf" rel="external" href="https://openreview.net/pdf?id=6XGgutacQ0B">Proceeding</a>              </p>
-              </p>
-                  <p></p>
-              <p>
-              <a class="keyword"> neural networks </a>
-              <a class="keyword"> convex analysis </a>
-              </p>
-              </td>
-            </tr>
-   
-   
-   
-   	<tr>
-          <td width="25%">
-            <div class="one">
-                <img src="images/convex_gan.png" style="width:200px;height:150px;">
-            </div>                
-              </td>
-              <td valign="middle" width="75%">
-		  <p><a href="https://arxiv.org/abs/2107.05680">
-        <papertitle><strong>Hidden Convexity of Wasserstein GANs: Interpretable Generative Models with Closed-Form Solutions</strong></papertitle></a><br>
-Arda Sahiner*, <strong>Tolga Ergen*</strong>, Batu Ozturkler, Burak Bartan, John Pauly, Morteza Mardani, Mert Pilanci<br/> 
-                      <em>ICLR 2022 </em>&nbsp; <br> </p>
-		<a class="link link_arxiv" rel="external" href="https://arxiv.org/abs/2107.05680">arXiv</a>
-		<a class="link link_pdf" rel="external" href="https://openreview.net/pdf?id=e2Lle5cij9D">Proceeding</a>              </p>
-      
-              </p>
-     <p>
-              <a class="keyword"> generative adversarial networks </a>
-              <a class="keyword"> convex-concave games </a>
-              <a class="keyword"> convex duality </a>
-                </p>
-              </td>
-            </tr>
-   
-   
-          
-      	<tr>
-          <td width="25%">
-            <div class="one">
-                <img src="images/convex_dualgeo2.png" style="width:200px;height:150px;">
-            </div>                
-              </td>
-              <td valign="middle" width="75%">
-		  <p><a href="https://jmlr.org/papers/v22/20-1447.html">
-        <papertitle><strong>Convex Geometry and Duality of Over-parameterized Neural Networks</strong></papertitle></a><br>
-<strong>Tolga Ergen</strong>, Mert Pilanci<br/>
-                <em>JMLR </em>&nbsp; <br> </p>
-		<a class="link link_arxiv" rel="external" href="https://arxiv.org/abs/2002.11219">arXiv</a>             
-		<a class="link link_pdf" rel="external" href="https://jmlr.org/papers/v22/20-1447.html">Proceeding</a>              </p>
-
-              </p>
-              <p>
-              <a class="keyword"> neural networks </a>
-              <a class="keyword"> convex analysis </a>
-              <a class="keyword"> non-convex optimization </a>
-                </p>
-              </td>
-            </tr>
-        
-        
-       
-      
-      
-      	<tr>
-          <td width="25%">
-            <div class="one">
-                <img src="images/deep_dual.jpg" style="width:200px;height:150px;">
-            </div>                
-              </td>
-              <td valign="middle" width="75%">
-		  <p><a href="http://proceedings.mlr.press/v139/ergen21b.html">
-        <papertitle><strong>Revealing the Structure of Deep Neural Networks via Convex Duality</strong></papertitle></a><br>
-<strong>Tolga Ergen</strong>, Mert Pilanci<br/>
-                <em>ICML 2021 </em>&nbsp; <br>    </p>
-		<a class="link link_arxiv" rel="external"  href="https://arxiv.org/abs/2002.09773">arXiv</a>              
-		<a class="link link_pdf" rel="external" href="http://proceedings.mlr.press/v139/ergen21b">Proceeding</a>              </p>
-              </p>
-     <p>
-              <a class="keyword"> deep neural networks </a>
-              <a class="keyword"> convex duality </a>
-              <a class="keyword"> non-convex optimization </a>
-                </p>
-              </td>
-            </tr>
-        
-            	<tr>
-          <td width="25%">
-            <div class="one">
-                <img src="images/parallel_network.png" style="width:200px;height:150px;">
-            </div>                
-              </td>
-              <td valign="middle" width="75%">
-		  <p><a href="http://proceedings.mlr.press/v139/ergen21a.html">
-        <papertitle><strong>Global Optimality Beyond Two Layers: Training Deep ReLU Networks via Convex Programs</strong></papertitle></a><br>
-<strong>Tolga Ergen</strong>, Mert Pilanci<br/>
-                <em>ICML 2021 </em>&nbsp; <br>     </p>
-		<a class="link link_arxiv" rel="external"  href="https://arxiv.org/abs/2110.05518">arXiv</a>              
-		<a class="link link_pdf" rel="external"  href="http://proceedings.mlr.press/v139/ergen21a">Proceeding</a>              </p>
-     <p>
-              <a class="keyword"> deep neural networks </a>
-              <a class="keyword"> convex optimization </a>
-     </p>
-              </td>
-            </tr>
-        
-          
-      
-      
-    
-
-         	<tr>
-          <td width="30%" >
-            <div class="one">
-                <img src="images/convex_cnn.jpg" style="width:200px;height:150px;">
-            </div>                
-              </td>
-  
-              <td valign="middle" width="70%">
-		  <p><a href="https://openreview.net/pdf?id=0N8jUH4JMv6">
-        <papertitle><strong>Implicit Convex Regularizers of CNN Architectures: Convex Optimization of Two- and Three-Layer Networks in Polynomial Time</strong></papertitle></a><br>
-<strong>Tolga Ergen</strong>, Mert Pilanci<br/>
-                <em>ICLR 2021</em> <font color="red"><b>(Spotlight Presentation) </b></font>&nbsp; <br> </p>
-		<a class="link link_arxiv" rel="external" href="https://arxiv.org/2006.14798">arXiv</a>              
-		<a class="link link_pdf" rel="external" href="https://openreview.net/pdf?id=0N8jUH4JMv6">Proceeding</a>              </p>
-              </p>
-                  <p></p>
-              <p>
-              <a class="keyword"> convolutional neural networks </a>
-              <a class="keyword"> convex optimization </a>
-              <a class="keyword"> deep learning </a>
-              </p>
-              </td>
-            </tr>
-          
-          
-          
-          
-            	<tr>
-          <td width="25%">
-            <div class="one">
-                <img src="images/convex_nn_vector.png" style="width:200px;height:150px;">
-            </div>                
-              </td>
-              <td valign="middle" width="75%">
-		  <p><a href="https://openreview.net/pdf?id=fGF8qAqpXXG">
-        <papertitle> <strong>Vector-output ReLU Neural Network Problems are Copositive Programs: Convex Analysis of Two Layer Networks and Polynomial-time Algorithms</strong></papertitle></a><br>
-Arda Sahiner, <strong>Tolga Ergen</strong>, John Pauly, Mert Pilanci<br/>
-                <em>ICLR 2021 </em>&nbsp; <br> </p>
-		<a class="link link_arxiv" rel="external" href="https://arxiv.org/abs/2012.13329">arXiv</a>              
-		<a class="link link_pdf" rel="external" href="https://openreview.net/pdf?id=fGF8qAqpXXG">Proceeding</a>              </p>
-              </p>
-          <p>
-              <a class="keyword"> neural networks </a>
-              <a class="keyword"> convex analysis </a>
-              <a class="keyword"> non-convex optimization </a>
-          </p>
-              </td>
-            </tr>
-          
-          
-          
-                   	<tr>
-          <td width="25%">
-            <div class="one">
-                <img src="images/convex_cnn_twolayer.png" style="width:200px;height:150px;">
-            </div>                
-              </td>
-              <td valign="middle" width="75%">
-		  <p><a href="https://opt-ml.org/papers/2020/paper_39.pdf">
-        <papertitle><strong>Convex Programs for Global Optimization of Convolutional Neural
-Networks in Polynomial-Time</strong></papertitle></a><br>
-<strong>Tolga Ergen</strong>, Mert Pilanci<br/>
-                <em>NeurIPS 2020 Workshop on Optimization for Machine Learning </em><font color="red"><b>(Oral Presentation) </b></font>&nbsp; <br> </p>
-		<a class="link link_pdf" rel="external"  href="https://opt-ml.org/papers/2020/paper_39.pdf">PDF</a>              </p>
-              </p>
-          <p>
-              <a class="keyword"> convolutional neural networks </a>
-              <a class="keyword"> convex optimization </a>
-              <a class="keyword"> deep learning </a>
-          </p>
-              </td>
-            </tr>
-          
-          
-          
-       	<tr>
-          <td width="25%">
-            <div class="one">
-                <img src="images/convex_nn.jpg" style="width:200px;height:150px;">
-            </div>                
-              </td>
-              <td valign="middle" width="75%">
-		  <p><a href="http://proceedings.mlr.press/v119/pilanci20a.html">
-        <papertitle><strong>Neural Networks are Convex Regularizers: Exact Polynomial-time Convex Optimization Formulations for Two-layer Networks</strong></papertitle></a><br>
-Mert Pilanci, <strong>Tolga Ergen</strong><br/>
-                <em>ICML 2020</em>&nbsp; <br> </p>
-		<a class="link link_arxiv" rel="external"  href="https://arxiv.org/abs/2002.10553">arXiv</a>  
-		<a class="link link_pdf" rel="external"  href="http://proceedings.mlr.press/v119/pilanci20a.html">Proceeding</a>              </p>
-              </p>
-                <p>
-              <a class="keyword"> neural networks </a>
-              <a class="keyword"> convex analysis </a>
-              <a class="keyword"> non-convex optimization </a>
-                </p>
-              </td>
-            </tr>
-        
- 
-
-       	<tr>
-          <td width="25%">
-            <div class="one">
-                <img src="images/convex_geometry.jpeg" style="width:200px;height:150px;">
-            </div>                
-              </td>
-              <td valign="middle" width="75%">
-                		  <p><a href="http://proceedings.mlr.press/v108/ergen20a.html">
-        <papertitle></papertitle><strong>Convex Geometry of Two-Layer ReLU Networks: Implicit Autoencoding and Interpretable Models</strong></papertitle></a><br>
-<strong>Tolga Ergen</strong>, Mert Pilanci<br/>
-                <em>AISTATS 2020</em>&nbsp; <br> </p>
-		<a class="link link_pdf" rel="external" href="http://proceedings.mlr.press/v108/ergen20a.html">Proceeding</a>              </p>
-              </p>
-                <p>
-              <a class="keyword"> neural networks </a>
-              <a class="keyword"> convex analysis </a>
-              <a class="keyword"> non-convex optimization </a>
-                </p>
-              </td>
-            </tr>
-        
-        
-        
-       	<tr>
-          <td width="25%">
-            <div class="one">
-                <img src="images/convex_autoreg.png" style="width:200px;height:150px;">
-            </div>                
-              </td>
-              <td valign="middle" width="75%">
-		  <p><a href="https://ieeexplore.ieee.org/document/9413662">
-        <papertitle><strong>Convex Neural Autoregressive Models: Towards Tractable, Expressive, and Theoretically-Backed Models for Sequential Forecasting and Generator</strong></papertitle></a><br>
-Vikul Gupta, Burak Bartan, <strong>Tolga Ergen</strong>, Mert Pilanci<br/>
-                <em>ICASSP 2021</em>&nbsp; <font color="red"><b>(Outstanding Paper Award) </b></font>&nbsp; <br> </p>
-		<a class="link link_pdf" rel="external"  href="https://ieeexplore.ieee.org/document/9413662">Proceeding</a>              </p>
-              </p>
-                <p>
-              <a class="keyword"> generative models </a>
-              <a class="keyword"> neural networks </a>
-              <a class="keyword"> convex optimization </a>
-                </p>
-              </td>
-            </tr>
-
-
-
-       
-
-       	<tr>
-          <td width="25%">
-            <div class="one">
-                <img src="images/distributed_svm.png" style="width:200px;height:150px;">
-            </div>                
-              </td>
-              <td valign="middle" width="75%">
-		  <p><a href="https://www.sciencedirect.com/science/article/abs/pii/S1051200420300026">
-        <papertitle><strong>A Novel Distributed Anomaly Detection Algorithm Based on Support Vector Machines</strong></papertitle></a><br>
-<strong>Tolga Ergen</strong>, Serdar Kozat<br/>
-                <em>Digital Signal Processing</em>&nbsp; <br> </p>
-		<a class="link link_pdf" rel="external" href="https://www.sciencedirect.com/science/article/abs/pii/S1051200420300026">Proceeding</a>              </p>
-              </p>
-            <p>
-              <a class="keyword"> support vector machines </a>
-              <a class="keyword"> distributed optimization </a>
-            </p>
-              </td>
-            </tr>
-        
-        
-        
-       	<tr>
-          <td width="25%">
-            <div class="one">
-                <img src="images/convex_cutting.png" style="width:200px;height:150px;">
-            </div>                
-              </td>
-              <td valign="middle" width="75%">
-		  <p><a href="https://opt-ml.org/papers/2019/paper_34.pdf">
-        <papertitle><strong>Convex Duality and Cutting Plane Methods for Over-parameterized Neural Networks</strong></papertitle></a><br>
-<strong>Tolga Ergen</strong>, Mert Pilanci<br/>
-                <em>NeurIPS 2019 Workshop on Optimization for Machine Learning  </em>&nbsp; <br> </p>
-		<a class="link link_pdf" rel="external"  href="https://opt-ml.org/papers/2019/paper_34.pdf">PDF</a>              </p>
-              </p>
-          <p>
-              <a class="keyword"> neural networks </a>
-              <a class="keyword"> convex analysis </a>
-              <a class="keyword"> non-convex optimization </a>                </p>
-              </td>
-            </tr>
-
-     
-         	<tr>
-          <td width="25%">
-            <div class="one">
-                <img src="images/random_proj.png" style="width:200px;height:150px;">
-            </div>                
-              </td>
-              <td valign="middle" width="75%">
-		  <p><a href="https://drive.google.com/file/d/1x_ft76LXMD9-OKGnkdcJWcFLyXaPxo2x/view">
-        <papertitle><strong>Random Projections for Learning Non-convex Models</strong></papertitle></a><br>
-<strong>Tolga Ergen</strong>, Mert Pilanci<br/>
-                <em>NeurIPS 2019 Workshop on Beyond First Order Methods in Machine Learning </em>&nbsp; <br> </p>
-		<a class="link link_pdf" rel="external" href="https://drive.google.com/file/d/1x_ft76LXMD9-OKGnkdcJWcFLyXaPxo2x/view">PDF</a>              </p>
-              </p>
-          <p>
-              <a class="keyword"> randomized algorithms </a>
-              <a class="keyword"> non-convex optimization </a>
-          </p>
-              </td>
-            </tr>
-          
-          
-       	<tr>
-          <td width="25%">
-            <div class="one">
-                <img src="images/convex_shallow.png" style="width:200px;height:150px;">
-            </div>                
-              </td>
-              <td valign="middle" width="75%">
-		  <p><a href="https://ieeexplore.ieee.org/abstract/document/8919769">
-        <papertitle><strong>Convex Optimization for Shallow Neural Networks</strong></papertitle></a><br>
- <strong>Tolga Ergen</strong>, Mert Pilanci <br/>
-                <em>ALLERTON 2019</em>&nbsp; <br> </p>
-		<a class="link link_pdf" rel="external" href="https://ieeexplore.ieee.org/abstract/document/8919769">Proceeding</a>              </p>
-              </p>
-              <p>
-              <a class="keyword"> neural networks </a>
-              <a class="keyword"> convex optimization </a>
-              </p>
-              </td>
-            </tr>
-        
-       	<tr>
-          <td width="25%">
-            <div class="one">
-                <img src="images/energy_efficient.png" style="width:200px;height:150px;">
-            </div>                
-              </td>
-              <td valign="middle" width="75%">
-		  <p><a href="https://ieeexplore.ieee.org/abstract/document/8836527">
-        <papertitle><strong>Energy-Efficient LSTM Networks for Online Learning</strong></papertitle></a><br>
-<strong>Tolga Ergen</strong>, Ali Mirza, Serdar Kozat<br/>
-                <em>IEEE TNNNLS</em>&nbsp; <br> </p>
-		<a class="link link_pdf" rel="external"  href="https://ieeexplore.ieee.org/abstract/document/8836527">Proceeding</a>              </p>
-              </p>
-              <p>
-              <a class="keyword"> recurrent neural networks </a>
-              <a class="keyword"> online learning </a>
-              <a class="keyword"> non-convex optimization </a>
-              </p>
-              </td>
-            </tr>
-
-       	<tr>
-          <td width="25%">
-            <div class="one">
-                <img src="images/unsup_anomaly.png" style="width:200px;height:100px;">
-            </div>                
-              </td>
-              <td valign="middle" width="75%">
-                		  <p><a href="https://ieeexplore.ieee.org/abstract/document/8836638">
-        <papertitle><strong>Unsupervised Anomaly Detection with LSTM Neural Networks</strong></papertitle></a><br>
-<strong>Tolga Ergen</strong>, Serdar Kozat<br/>
-                <em>IEEE TNNLS</em>&nbsp; <br> </p>
-		<a class="link link_arxiv" rel="external" href="https://arxiv.org/abs/1710.09207">arXiv</a>              
-		<a class="link link_pdf" rel="external" href="https://ieeexplore.ieee.org/abstract/document/8836638">Proceeding</a>              </p>
-              </p>
-              <p>
-              <a class="keyword"> recurrent neural networks </a>
-              <a class="keyword"> support vector machines </a>
-              <a class="keyword"> non-convex optimization </a>
-              </p>
-              </td>
-            </tr>
-        
-  
-  
-       	<tr>
-          <td width="25%">
-            <div class="one">
-                <img src="images/distributed_tree.png" style="width:200px;height:150px;">
-            </div>                
-              </td>
-              <td valign="middle" width="75%">
-                		  <p><a href="https://www.sciencedirect.com/science/article/abs/pii/S0165168418302688">
-        <papertitle><strong>Team-Optimal Online Estimation of Dynamic Parameters over Distributed Tree Networks</strong></papertitle></a><br>
-Fatih Kilic, <strong>Tolga Ergen</strong>, Muhammed Sayin, Serdar Kozat.<br/>
-                <em>Signal Processing</em>&nbsp; <br> </p>
-		<a class="link link_pdf" rel="external"  href="https://www.sciencedirect.com/science/article/abs/pii/S0165168418302688">Proceeding</a>              </p>
-              </p>
-              <p>
-              <a class="keyword"> online learning </a>
-              <a class="keyword"> distributed optimization </a>
-              </p>
-              </td>
-            </tr>
-        
-       
-        
-       	<tr>
-          <td width="25%">
-            <div class="one">
-                <img src="images/distributed_lstm.png" style="width:200px;height:150px;">
-            </div>                
-              </td>
-              <td valign="middle" width="75%">
-		  <p><a href="https://ieeexplore.ieee.org/document/8169114">
-        <papertitle><strong>Online Training of LSTM Networks in Distributed Systems for Variable Length Data Sequences</strong></papertitle></a><br>
-<strong>Tolga Ergen</strong>, Serdar Kozat<br/>
-                <em>IEEE TNNLS</em>&nbsp; <br> </p>
-                <a class="link link_arxiv" rel="external" href="https://arxiv.org/abs/1710.08744">arXiv</a>             
-                <a class="link link_pdf" rel="external" href="https://ieeexplore.ieee.org/document/8169114">Proceeding</a>              </p>
-              </p>
-              <p>
-              <a class="keyword"> recurrent neural networks </a>
-              <a class="keyword"> distributed optimization </a>
-              </p>
-              </td>
-            </tr>
-
-
-
-       	<tr>
-          <td width="25%">
-            <div class="one">
-                <img src="images/online_lstm.png" style="width:200px;height:150px;">
-            </div>                
-              </td>
-              <td valign="middle" width="75%">
-		  <p><a href="https://ieeexplore.ieee.org/abstract/document/8036280">
-        <papertitle><strong>Efficient Online Learning Algorithms Based on LSTM Neural Networks</strong></papertitle></a><br>
-<strong>Tolga Ergen</strong>, Serdar Kozat<br/>
-                <em>IEEE TNNLS</em>&nbsp; <br> </p>
-		<a class="link link_pdf" rel="external"  href="https://ieeexplore.ieee.org/abstract/document/8036280">Proceeding</a>              </p>
-              </p>
-              <p>
-              <a class="keyword"> recurrent neural networks </a>
-              <a class="keyword"> online learning </a>
-              </p>
-              </td>
-            </tr>
-
-       	<tr>
-          <td width="25%">
-            <div class="one">
-                <img src="images/siu_efficient_regression.png" style="width:200px;height:150px;">
-            </div>                
-              </td>
-              <td valign="middle" width="75%">
-		  <p><a href="https://ieeexplore.ieee.org/document/8404708">
-        <papertitle><strong>A Highly Efficient Recurrent Neural Network Architecture for Data Regression</strong></papertitle></a><br>
-<strong>Tolga Ergen</strong>, Emir Ceyani<br/>
-                <em>IEEE SIU 2018</em>&nbsp; <br> </p>
-		<a class="link link_pdf" rel="external"  href="https://ieeexplore.ieee.org/document/8404708">Proceeding</a>              </p>
-              </p>
-              <p>
-              <a class="keyword"> recurrent neural networks </a>
-              <a class="keyword"> online learning </a>
-              </p>
-              </td>
-            </tr>
-        
-        
-        
-       	<tr>
-          <td width="25%">
-            <div class="one">
-                <img src="images/siu_novel_anomaly.png" style="width:200px;height:150px;">
-            </div>                
-              </td>
-              <td valign="middle" width="75%">
-		  <p><a href="https://ieeexplore.ieee.org/document/8404676/">
-        <papertitle> <strong>A Novel Anomaly Detection Approach Based on Neural Networks</strong></papertitle></a><br>
-<strong>Tolga Ergen</strong>, Mine Kerpicci<br/>
-                <em>IEEE SIU 2018</em>&nbsp; <br> </p>
-		<a class="link link_pdf" rel="external"  href="https://ieeexplore.ieee.org/document/8404676/">Proceeding</a>              </p>
-              </p>
-              <p>
-              <a class="keyword">  neural networks </a>
-              <a class="keyword"> non-convex optimization </a>
-              </p>
-              </td>
-            </tr>
-
-
-        <tr>
-          <td width="25%">
-            <div class="one">
-                <img src="images/siu_2.png" style="width:200px;height:150px;">
-            </div>                
-              </td>
-              <td valign="middle" width="75%">
-      <p><a href="https://ieeexplore.ieee.org/document/8404806">
-        <papertitle> <strong>Recurrent neural networks based online learning algorithms for distributed systems
-</strong></papertitle></a><br>
-<strong>Tolga Ergen</strong>, Safa Sahin, Serdar Kozat<br/>
-                <em>IEEE SIU 2018</em>&nbsp; <br> </p>
-    <a class="link link_pdf" rel="external"  href="https://ieeexplore.ieee.org/document/8404806">Proceeding</a>              </p>
-              </p>
-              <p>
-              <a class="keyword">  recurrent neural networks </a>
-              <a class="keyword"> distributed systems </a>
-              </p>
-              </td>
-            </tr>
-
-      
-       	<tr>
-          <td width="25%">
-            <div class="one">
-                <img src="images/eusipco_lstm.png" style="width:200px;height:150px;">
-            </div>                
-              </td>
-              <td valign="middle" width="75%">
-		  <p><a href="http://150.162.46.34:8080/eusipco2017/papers/1570346404.pdf">
-        <papertitle> <strong>Computationally Efficient Online Regression via LSTM Neural Networks</strong></papertitle></a><br>
-<strong>Tolga Ergen</strong>, Serdar Kozat<br/>
-                <em>EUSIPCO 2017</em>&nbsp; <br> </p>
-		<a class="link link_pdf" rel="external" href="http://150.162.46.34:8080/eusipco2017/papers/1570346404.pdf">PDF</a>              </p>
-              </p>
-              <p>
-              <a class="keyword"> recurrent neural networks </a>
-              <a class="keyword"> online learning </a>
-              </p>
-              </td>
-            </tr>
-
-
-      
-       	<tr>
-          <td width="25%">
-            <div class="one">
-                <img src="images/bandit.png" style="width:200px;height:150px;">
-            </div>                
-              </td>
-              <td valign="middle" width="75%">
-		  <p><a href="https://ieeexplore.ieee.org/document/7960214/">
-        <papertitle><strong>An Efficient Bandit Algorithm for General Weight Assignments </strong></papertitle></a><br>
-Kaan Gokcesu, <strong>Tolga Ergen</strong>, Selami Ciftci, Serdar Kozat<br/>
-                <em>IEEE SIU 2017</em>&nbsp; <br> </p>
-		<a class="link link_pdf" rel="external" href="https://ieeexplore.ieee.org/document/7960214/">Proceeding</a>              </p>
-              </p>
-              <p>
-              <a class="keyword"> adversarial multi armed bandit </a>
-              <a class="keyword"> non-convex optimization </a>
-              </p>
-              </td>
-            </tr>
-
-
-      
-       	<tr>
-          <td width="25%">
-            <div class="one">
-                <img src="images/siu_online.png" style="width:200px;height:150px;">
-            </div>                
-              </td>
-              <td valign="middle" width="75%">
-		  <p><a href="https://ieeexplore.ieee.org/document/7960218">
-        <papertitle><strong> Neural Networks Based Online Learning</strong></papertitle></a><br>
-<strong>Tolga Ergen</strong>, Serdar Kozat<br/>
-                <em>IEEE SIU 2017</em>&nbsp; <br> </p>
-		<a class="link link_pdf" rel="external" href="https://ieeexplore.ieee.org/document/7960218">Proceeding</a>              </p>
-              </p>
-              <p>
-              <a class="keyword"> neural networks </a>
-              <a class="keyword"> online learning </a>
-              </p>
-              </td>
-            </tr>
-
-      
-       	<tr>
-          <td width="25%">
-            <div class="one">
-                <img src="images/soft_novelty.png" style="width:200px;height:150px;">
-            </div>                
-              </td>
-              <td valign="middle" width="75%">
-		  <p><a href="https://ieeexplore.ieee.org/document/7960213">
-        <papertitle><strong>Novelty Detection Using Soft Partitioning and Hierarchical Models</strong></papertitle></a><br>
- <strong>Tolga Ergen</strong>, Kaan Gokcesu, Mustafa Simsek, Serdar Kozat<br/>
- <em>IEEE SIU 2017</em>&nbsp; <br> </p>
-		<a class="link link_pdf" rel="external" href="https://ieeexplore.ieee.org/document/7960213">Proceeding</a>              </p>
-              </p>
-              <p>
-              <a class="keyword"> online learning </a>
-              <a class="keyword"> non-convex optimization </a>
-              </p>
-              </td>
-            </tr>
-
-
-      
-       	<tr>
-          <td width="25%">
-            <div class="one">
-                <img src="images/siu_distributed.png" style="width:200px;height:150px;">
-            </div>                
-              </td>
-              <td valign="middle" width="75%">
-		  <p><a href="https://ieeexplore.ieee.org/document/7960220">
-        <papertitle><strong>Online Distributed Nonlinear Regression via Neural Networks</strong></papertitle></a><br>
-<strong>Tolga Ergen</strong>, Serdar Kozat<br/>
-                <em>IEEE SIU 2017</em>&nbsp; <br> </p>
-		<a class="link link_pdf" rel="external"  href="https://ieeexplore.ieee.org/document/7960220">Proceeding</a>              </p>
-              </p>
-              <p>
-              <a class="keyword"> neural networks </a>
-              <a class="keyword"> distributed optimization </a>
-              </p>
-              </td>
-            </tr>
-
-        </tbody></table>
-
-           <br>
-        
-
-        
-    
-    </div>
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-  </body>
-
-
-
-
+  <script src="js/site.js"></script>
+</body>
+</html>
